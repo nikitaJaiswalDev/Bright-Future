@@ -1,0 +1,3641 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&display=swap');
+/*font-family: 'Comfortaa', cursive;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+/*font-family: 'Roboto', sans-serif;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+/*font-family: 'Montserrat', sans-serif;*/
+
+
+body {
+  font-size: 14px !important;
+  font-weight: normal;
+  font-style: unset;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 1.4px;
+  color: #000000;
+  background: #F7F9FB !important;
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 400;
+}
+
+.sec_gray {
+  background: #f8f7f9;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin-bottom: 5px;
+  font-family: 'Montserrat', sans-serif !important;
+
+}
+ul {
+  list-style-type: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #000000;
+  letter-spacing: normal;
+  margin: 0 0 16px;
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 600;
+}
+
+a {
+  color: unset;
+  cursor: pointer !important;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: unset;
+  outline: none;
+}
+
+.form-control {
+  letter-spacing: 1.6px;
+}
+.wraper_dashbrd .container {
+  max-width: 1280px;
+}
+
+.form-control:focus {
+  background-color: #fff;
+  border-color: unset !important;
+  border: 2px solid #18a0fb !important;
+  outline: 0;
+  box-shadow: unset !important;
+}
+
+section {
+  padding: 50px 0 40px;
+  position: relative;
+}
+.card-body {
+  padding: 1rem;
+}
+
+.bg_gray {
+  background: #ecf1f8;
+}
+
+.custom_container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 25px;
+}
+
+.pos_rel {
+  position: relative;
+}
+
+a.cp {
+  color: #4579ae !important;
+  text-decoration: underline !important;
+}
+
+.card {
+  border: none;
+  padding: 10px 10px;
+}
+.heder_lnks {
+  text-align: center;
+}
+.heder_lnks.nav-item {
+    margin-right: 16px;
+    margin-top: 6px;
+}
+.user_drpdwn{
+  color: #18a0fb !important;
+}
+.usr_drpdown{
+  padding-left: 2px;
+}
+.nav_lnk_itm{
+   color: #18a0fb ;
+}
+.list_half li {
+  width: 49%;
+  display: inline-block;
+  padding: 3px 0;
+}
+.butns_ftr li {
+  border: 1px solid #18A0FB;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #18A0FB;
+  text-align: center;
+  font-weight: 500;
+}
+.react-slideshow-container .default-nav {
+  background: transparent;
+}
+.id_crd_img{
+  background-color: #E9F0F8;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.id_crd_img img {
+  width: 19px;
+}
+.card_uplod_docs {
+  padding: 0 1rem;
+}
+.upldd_nme {
+  color: #000;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.updte_values_view {
+  border: 1px solid #18a0fb;
+  border-radius: 6px;
+  padding: 15px;
+  margin-top: 15px;
+}
+.width_form select, input{
+  border: 1px solid #18A0FB;
+}
+.fltr_jobs_div span{
+  color: #18A0FB;
+}
+.uplod_docs_div select, input{
+   border: 1px solid #18A0FB;
+}
+ .form-control, textarea.form-control{
+  border: 1px solid #18A0FB;
+}
+input#exampleFile {
+  border: none;
+}
+#exampleEmail ,#exampleText, #exampleSelect {
+  border: 1px solid #18A0FB;
+}
+.user-img-fluid{
+  width: 46px;
+  height: 46px;
+  border-radius: 100%;
+  object-fit: cover;
+  border: 1px solid #797979;
+}
+.nav_icon{
+  margin: 0 6px;
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+.edt_btn{
+  background: transparent !important;
+  color: #18A0FB !important;
+  padding: 0px 8px !important;
+  text-transform: uppercase;
+  margin: 0px 0 10px;
+ }
+ .inner_socl_socal{
+  padding: 4px 0 0px;
+  margin: 0px 0 2px;
+ }
+ .vrfy_phn{
+  padding-top:10px;
+  display: inline-block;
+  color: #18A0FB;
+  font-size: 12px;
+ }
+ .vrfy_phn img {
+    padding-left: 6px;
+ }
+.form-control-file, .form-control-range {
+  border: none;
+}
+.sgnup_div textarea.form-control {
+  max-width: unset;
+  height: unset !important;
+}
+
+.sgnup_div .form-control {
+  max-width: 240px;
+  border-color: #18A0FB;
+  font-size: 12px !important;
+  height: 34px !important;
+}
+
+.check_fleid .form-check-label {
+  font-size: 12px;
+}
+
+.check_fleid .form-check-label a {
+  color: #18A0FB !important;
+}
+.job_stus .form-check-label {
+    margin-bottom: 0;
+    font-weight: 400;
+    font-size: 12px;
+}
+.id_crd_imgg .img-fluid {
+  width: 26px;
+}
+.id_crd_imgg p {
+    font-size: 10px;
+    margin: 0 !important;
+    padding: 10px 0;
+    color: #000000 !important;
+    text-align: justify;
+    padding-right: 20px;
+}
+.btn_borderdd {
+  background: transparent !important;
+  border: 1px solid #18A0FB !important;
+  color: #18A0FB !important;
+  padding: 5px 60px !important;
+  text-transform: uppercase;
+  margin: 0px 0 10px;
+  font-weight: 600;
+  display: inline-block;
+  border-radius: 5px;
+}
+.small_btnnn {
+  padding: 8px 14px !important;
+  font-size: 12px;
+  margin-top: 10px;
+}
+.small_btnnn input {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.slid_inside h2 {
+  font-size: 55px;
+  padding: 40px 0;
+  font-weight: normal;
+  font-family: 'Comfortaa', cursive !important;
+}
+
+.navbar-brand {
+  font-size: 23px;
+}
+
+.inner_socl {
+  padding: 4px 0 10px;
+  margin: 0px 0 10px;
+  color: #414141;
+}
+
+.inner_socl img {
+  border: 1px solid #ddd;
+  border-radius: 100%;
+  width: 38px;
+  height: 38px;
+  object-fit: cover;
+  padding: 2px;
+  margin-right: 10px;
+}
+.inner_socl span {
+  border-left: 1px solid #e7e7e7;
+  padding: 5px 0;
+  padding-left: 10px;
+  font-size: 12px;
+  font-weight: 400;
+}
+.alrd_regstrd a {
+  color: #18A0FB !important;
+}
+.headere_home .navbar.navbar-expand-md.navbar-light.bg-light {
+  background: #fff !important;
+  box-shadow: 0 10px 10px #f0f0f0;
+  padding: 20px 30px;
+}
+.headere_home.header_db .navbar.navbar-expand-md.navbar-light.bg-light {
+  padding: 12px 30px;
+}
+.navbar-light .navbar-brand {
+  color: rgba(0,0,0,.9);
+  font-family: 'Comfortaa', cursive;
+}
+.headere_home.header_db  .navbar-expand-md .navbar-nav .nav-link {
+  padding: 5px 10px 0;
+}
+.sgnup_sec .card {
+  border: none;
+}
+.check_fleid {
+  margin: 10px 0 !important;
+}
+.headr_btnns .nav-link {
+  border: 1px solid #18A0FB;
+  margin: 0 10px;
+  border-radius: 6px;
+  color: #18A0FB !important;
+  padding: 6px 13px !important;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 14px;
+}
+.footer_home {
+  background: #fff;
+  padding: 30px 0 10px;
+}
+.lowr_ftr {
+  border-top: 1px solid #ddd;
+  padding-top: 18px;
+  margin-top: 10px;
+}
+.lowr_ftr p {
+  margin: 0px 0 10px;
+}
+
+.logo_ftr p {
+  font-size: 40px;
+  line-height: 33px;
+  color: #000;
+}
+.ftr_list h5 {
+  margin-bottom: 17px;
+  font-weight: 600;
+}
+.react-slideshow-container .default-nav {
+  background: transparent;
+}
+h5.card-title {
+  font-size: 17px;
+  font-weight: 400;
+  padding-top: 15px;
+}
+.cporgt.text-right {
+  text-align: right;
+}
+.slid_inside {
+  padding: 0 20px;
+}
+.forgt_pswd {
+  max-width: 273px;
+  margin-bottom: 15px;
+}
+.forgt_pswd a {
+  color: #18A0FB !important;
+  font-size: 12px;
+}
+.img_benefits {
+  width: 100%;
+  overflow: hidden;
+  height: 280px;
+}
+.bg_white {
+  background: #fff;
+}
+.img_side {
+  padding: 20px;
+}
+.img_side h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 23px 0;
+}
+.cporgt span {
+  margin-left: 10px;
+}
+.ftr_up {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #E0F3FF;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 48px;
+  border-radius: 100%;
+}
+.ftr_up img {
+  width: 36px;
+}
+.cporgt span {
+  margin-left: 10px;
+  width: 25px;
+  /* background: #ddd; */
+  display: inline-block;
+  border-radius: 100%;
+  overflow: hidden;
+}
+span.text_warnng {
+  color: red;
+  font-size: 11px;
+}
+.nmbr_cntr {
+  position: absolute;
+  right: 0px;
+  font-weight: 700;
+  color: #000;
+  font-size: 12px;
+}
+.btn_univ_edt {
+  text-align: right;
+  font-size: 12px;
+}
+
+.qualf_meta {
+  font-size: 10px;
+  color: #181818;
+  padding-top: 10px;
+  font-weight: 500;
+}
+.theme_color {
+  color: #18A0FB;
+}
+
+.udte_prfle_div p strong {
+  color: #000;
+  display: block;
+  margin: 17px 0;
+}
+label .lab_spnn {
+  color: #000;
+  margin-left: 14px;
+}
+.fee_dataa {
+    padding-left: 10px;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 150%;
+    color: #181818;
+}
+
+
+/*skashi css*/
+
+.MuiOutlinedInput-notchedOutline {
+    border-color: #18A0FB !important;
+}
+.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+    border-color: #18A0FB;
+}
+.MuiOutlinedInput-input {
+    padding: 8px 15px !important;
+}
+.MuiInputLabel-outlined {
+  transform: translate(8px, 6px) scale(1) !important;
+  font-size: 12px !important;
+}
+.MuiInputLabel-outlined.MuiInputLabel-shrink {
+  transform: translate(14px, -7px) scale(0.75) !important;
+}
+.MuiButton-outlinedPrimary {
+  border: 1px solid #18A0FB !important;
+  border-radius: 6px;
+  color: #18A0FB !important;
+  display: inline-block;
+  font-weight: 600;
+  padding: 7px 30px !important;
+}
+.Mui-focused:focus {
+  outline: 0 !important;
+}
+#contained-button-file {
+  display: none;
+}
+#contained-button-file2 {
+  display: none;
+}
+.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary {
+  color: #18A0FB !important;
+  background-color: white !important;
+  box-shadow: none;
+  border: 1px solid #18A0FB !important;
+  font-size: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+.makeStyles-formControl-1 {
+  width: 100%;
+}
+.MuiFormControl-root {
+  width: 100%;
+  max-width: 309px;
+}
+.MuiFormLabel-root.Mui-focused{
+	color:currentColor !important;
+}
+.MuiInputLabel-outlined{
+	padding-right: 20px;
+}
+
+/* myJobs css */
+
+.my_jobs_sec .form-control.form-control, .student_find_sec .form-control.form-control{
+  border: none;
+  color: black !important;
+  padding-left:0;
+  font-weight: 400;
+  font-size: 15px;
+  margin-bottom: 16px;
+}
+.my_jobs_sec .form-check {
+  padding-bottom:9px;
+}
+
+.my_jobs_sec .form-control::placeholder {
+  color: #272727;
+}
+.serch_icon {
+  float: right;
+  margin-top: 10px;
+  width:42px;
+}
+.job_stus{
+  margin-top:15px;
+}
+.fltr_jobs_div h6 {
+  font-size: 11px;
+  font-weight:500;
+  margin-bottom: 6px !important;
+  color: #000000;
+}
+.fltr_jobs_div label {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 150%;
+  color: #000000;
+}
+.srt_jobs{
+  text-align: center;
+  padding: 25px;
+  position: relative;
+}
+.srt_jobs::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #000;
+  left: 0;
+  top: 50%;
+  position: absolute;
+  border: 1px solid #E7E7E7;
+}
+.srt_jobs .dropdown-menu{
+  min-width: 14rem;
+}
+.srt_jobs button, .srt_jobs .btn-secondary.dropdown-toggle:focus{
+  background: none;
+  color: #18A0FB;
+  border: none;
+}
+.srt_jobs .drp_dwn ,.srt_drpdwn{
+  color: black;
+  font-size: 12px;
+}
+.srt_dte_drpdwn{
+  font-size: 14px;
+}
+.btn-secondary{
+  background:none;
+}
+.srt_jobs .btn.focus, .btn:focus {
+    outline: 0;
+    box-shadow: unset;
+}
+.btn-secondary.dropdown-toggle{
+    background: none;
+    border:none;
+}
+.my_jobs_sec .btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle {
+    color: #000 !important;
+    background-color: unset !important;
+    border-color: unset !important;
+}
+.my_jobs_sec .btn-secondary:hover {
+    color: #18A0FB !important;
+    background-color: unset !important;
+    border-color: unset !important;
+}
+.my_jobs_sec .btn-secondary:not(:disabled):not(.disabled).active:focus, .btn-secondary:not(:disabled):not(.disabled):active:focus, .show>.btn-secondary.dropdown-toggle:focus {
+    box-shadow: unset !important;
+}
+.dedlne_jobs_div span {
+   font-size: 10px;
+   color:#181818;
+}
+.heding_jobs span {
+   font-size: 13px;
+   color:#181818;
+   text-transform: capitalize;
+}
+.dedlne_jobs_div p {
+  font-size: 10px;
+  color: #000;
+  opacity: 0.5;
+}
+.job_dedlne .dedlne_jobs_div p {
+  opacity: 1 !important;
+  margin: 7px 0;
+}
+.dedlne_jobs_div .dte_deadline1{
+  color: #18A0FB;
+  font-size: 12px;
+  display: inline-block;
+}
+.hedng_dedlne1{
+  color: black;
+  font-size: 14px;
+  display: inline-block;
+}
+.nav_iconn {
+  padding-left: 15px;
+  padding-right: 6px;
+  width: 37px;
+}
+.rmt_only {
+    margin: 3px 25px;
+    display: inline-block;
+    text-transform: capitalize;
+    
+}
+img.img-fluid.img-fll {
+    width: 20px;
+    position: relative;
+    top: -4px;
+}
+.dedlne_jobs_div .fltr_dsgn {
+  background: rgba(33, 33, 33, 0.08);
+  border-radius: 16px;
+  padding: 5px 12px;
+  margin-right: 12px;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 12px;
+  display: inline-block;
+}
+.job_dedlne{
+  margin-bottom: 15px;
+}
+.pst_jb.btn.btn-outline-secondary {
+  width: 100%;
+}
+.job_dedlne2{
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.no_rws{
+  margin-top: 7px;
+  display: inline-block;
+}
+.nxt_iconn, .prv_iconns {
+  width: 8px;
+  color: #6E6893;
+}
+.job_srt_div span{
+  color: #6E6893;
+}
+.post_tutor_jbs2 {
+    margin-top: 15px;
+    padding: 10px 6px;
+}
+.tutor2{
+  margin-top:10px;
+}
+.my_jobs_sec .btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle {
+    color: #fff;
+    background:unset !important;
+    /* border-color: #4e555b; */
+}
+.my_jobs_sec .btn-secondary:hover {
+    color:unset important;
+     background-color:unset important;
+     border-color: unset important;
+}
+
+.my_jobs_sec .MuiInput-underline::after {
+    border-bottom: unset;
+}
+.my_jobs_sec .MuiInput-underline::before {
+    border-bottom: unset;
+}
+.my_jobs_sec .MuiInput-underline:hover:not(.Mui-disabled)::before {
+    border-bottom: 2px solid #18A0FB !important;
+}
+.my_jobs_sec .fltr_sbjcts, .update_prefernce_sec span.fltr_sbjcts, .edit_job_sec span.fltr_sbjcts  {
+    margin-top: 7px !important;
+    display: inline-block;
+}
+.update_prefernce_sec span.fltr_sbjcts {
+    margin-top: 4px !important;
+    margin-bottom: 4px !important;
+    display: inline-block;
+}
+
+.my_jobs_sec .MuiFormControl-root {
+  width: 100%;
+}
+.MuiFormControl-root {
+  margin: 0 !important;
+}
+.my_jobs_sec .MuiSelect-select {
+    cursor: pointer;
+    min-width: 100px;
+}
+.job_srt_div1 .MuiInputLabel-formControl {
+    left: 3px;
+    color: #6E6893;
+    font-weight: 600;
+    font-size: 12px;
+    top: 4px;
+}
+.MuiInputLabel-formControl {
+    top: 3px !important;
+}
+.job_srt_div1 .MuiSvgIcon-root {
+    fill: #6E6893 !important;
+}
+.srt_iconn {
+    padding-left: 28px;
+    cursor: pointer;
+  }
+  .srt_iconn_rvrse{
+    transform: rotateX(180deg);
+
+  }
+.srt_jobs .srt_by{
+    padding-right: 0px;
+    text-align: left;
+}
+.srt_jobs .dte_pst{
+    padding-left: 0px;
+}
+
+#demo-select-outlined-label {
+    color: #18A0FB;
+    font-size: 15px !important;
+}
+.MuiFormLabel-root MuiInputLabel-root no_rows{
+  color: #6E6893 !important;
+}
+
+/*myjobs */
+label.inpt_labe_open.form-check-label {
+  color:  #18A0FB;
+  font-weight: 500;
+}
+
+span.dte_deadline{
+   color:  #18A0FB;
+   font-size: 11px;
+}
+span.hedng_dedlne {
+    color: #181818;
+    font-size: 11px;
+}
+hr.brk_line {
+    margin-top: 0.9rem !important;
+    margin-bottom: 20px;
+}
+.fltr_dsgn_row{
+  margin-top:17px;
+}
+.tutor_row.row {
+    padding-top: 11px;
+}
+
+button:focus {
+    outline: unset !important;
+}
+.profile_images .img-fluid {
+    max-width: unset !important;
+    height: auto;
+    margin-left: 20px;
+}
+.img-fluided{
+   max-width: unset !important;
+   height: auto;
+   width: 45px;
+}
+
+#demo-select-outlined-label {
+  color: #18A0FB;
+  font-size: 12px !important;
+  font-weight: 400;
+}
+
+.font-weight-bold.univ_name {
+  margin-bottom: 0px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+  color: #181818;
+}
+.srt_jobs .MuiFormControl-root {
+    background: #f7f9fb;
+    padding: 0 20px;
+}
+h5.font-weight-bold.univ_name {
+  font-weight: 450;
+  font-size: 21px;
+  line-height: 17px;
+  color: #181818;
+}
+
+.prfle_meta p {
+    font-size: 12px;
+    line-height: 150%;
+    text-transform: capitalize;
+}
+
+/*update prefrence */
+
+.mode_teach{
+	padding-top:10px;
+	padding-bottom: 10px;
+}
+.dsh_btn{
+	padding-top:20px;
+}
+
+.rec_tutors{
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 11px;
+  text-transform: uppercase;
+  color: #181818;
+}
+.student_jbs_sidbr .name_tutor, .myjbs_sidbr .name_tutor  {
+  margin-bottom: 0;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 13px;
+  color: #181818;
+  padding-left: 12px;
+}
+.name_tutor {
+  margin-bottom: 0;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 13px;
+  color: #181818;
+}
+/* my_profile */
+
+.ban_img {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.img-prfle {
+  width: 180px;
+  height: 180px;
+  /*position: absolute;*/
+	/*bottom: 8px;*/
+  margin-top: -150px;
+}
+.totl_exp span {
+    color: #19a1fb;
+}
+.prfle_div{
+	position: relative;
+  margin-bottom: 20px;
+}
+.usr_age{
+	font-size: 13px !important;
+	font-weight: normal !important;
+	color: #484545 !important;
+}
+.prfle_div h5{
+	line-height: 0.1;
+}
+.work_prfle{
+	color: #181818 !important;
+  font-weight: normal;
+  font-size: 15px;
+  color: #181818;
+  margin-top: 18px;
+}
+.prfle_addrss{
+	font-size: 13px;
+	color: #181818;
+}
+.my_payments_sec .MuiBox-root {
+    padding: 20px 0 !important;
+}
+.MuiTab-textColorPrimary {
+    font-weight: 400 !important;
+    color: #181818 !important;
+}
+.cont_read{
+	padding-left:0 !important;
+	color: #18A0FB !important;
+	padding-top: 9px !important;
+	display: inline-block !important;
+	font-size: 13px;
+	font-weight: 900;
+}
+
+.div_contct_info{
+	margin-top: 20px;
+}
+.updte_values_view p {
+  font-size: 12px !important;
+  font-weight: 400;
+  color: #181818;
+}
+
+h5.font-weight-bold.univsty_name {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: #181818;
+}
+.MuiTabs-indicator {
+  background-color: #18A0FB !important;
+}
+/*  */
+.hader_items{
+	position: relative;
+}
+.count_no{
+	position: absolute;
+	background: #18A0FB !important;
+	padding-left: 2px;
+  padding-top: 1px;
+	border-radius: 100%;
+	color: white;
+	width: 15px;
+	height: 15px;
+	text-align: center;
+	bottom: 57px;
+	font-size: 8px;
+	font-weight: 700;
+}
+.totl_coin{
+	  font-size: 14px;
+    font-weight: 600;
+    color: #18a0fb;
+}
+.tutor_nme{
+	color: black;
+	font-weight: 700;
+  padding-left: 10px;
+}
+.vrtcal_lne {
+  border-left: 1px solid #eae6e6;
+  height: 61px;
+  padding-left: 27px;
+  padding-right: 6px;
+}
+
+/* dbheader  */
+li.heder_lnks.prfle-img.nav-item{
+	display: flex;
+  align-items: center;
+  margin-right: 0 !important;
+  margin-top: 0 !important;
+}
+.flw_us{
+	width: unset !important;
+  border-radius: unset !important;
+}
+
+/* dropdown  */
+
+.MuiSvgIcon-root {
+    fill: #18A0FB !important;
+}
+.teach_mode{
+	padding-bottom: 7px;
+}
+.prfle_mail_addrss{
+	color: #18A0FB;
+  padding-left:15px;
+  text-transform: capitalize;
+}
+.prfle_meta{
+	margin-top: 20px;
+ 	font-size: 13px;
+  color: #000;
+}
+
+.adrss_div{
+	padding-top:15px;
+}
+.sgnup_div h5 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 7px;
+  color: #181818;
+}
+.prfle_div h5 {
+  font-weight: bold;
+  font-size: 18px;
+  color: #181818;
+}
+.edt-btn{
+	width:20px;
+	margin-right: 5px;
+	margin-bottom: 3px;
+}
+.edt_button_btn{
+  z-index: 99;
+	position: absolute;
+	left: calc(44% - 132px/2 + 496px);
+	top: 90px;
+  background: #FFFFFF;
+  border: 2px solid #18A0FB;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 170px;
+  height: 32px;
+}
+.edt_button_btn:focus {
+    outline: unset;
+}
+.text-blue {
+    color: #19a0fb;
+    font-size: 13px;
+    padding: 0 12px;
+}
+.number_counts.sid_cnt.card {
+    margin-top: 30px;
+}
+.sid_cnt span.inln_pagnt {
+    padding: 0 12px;
+}
+.my_prfle_sec .edt_button_btn {
+  font-size: 10px;
+}
+.my_prfle_sec .edt_button_btn svg {
+  font-size: 10px;
+}
+.all_sbjects {
+    border: 1px solid #eae8e8;
+    padding: 10px;
+    display: inline block;
+    display: inline-block;
+    margin-right: 15px;
+    font-weight: bold;
+}
+.edt_btnn{
+	color: #18A0FB !important;
+	margin-top: 10px;
+	display: inline-block;
+}
+.job_prfrnce {
+    padding: 20px 0 9px 0;
+}
+.availble_mode{
+	padding-top: 10px;
+}
+.prfle_meta .fee_data{
+	color: #181818;
+}
+.my_profile_div .updte_values_view{
+	border:unset !important;
+	padding:unset !important;
+}
+.prfle_meta .quaL_year{
+	color: #5b5959;
+	font-size: 12px;
+}
+
+.brk-line {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.my_profile_div .updte_values_view {
+	margin-top: 20px;
+}
+.MuiAppBar-colorPrimary {
+    color: black !important;
+    background-color: transparent !important;
+    border-bottom: 1px solid #ddd;
+}
+.MuiButtonBase-root {
+    background: #fff !important;
+}
+.MuiTouchRipple-root { 
+    border: 1px solid #ececec;
+}
+.MuiTab-root {
+	max-width: 280px;
+    min-width: 280px !important;  
+}
+.my_profile_tabs .PrivateTabIndicator-colorSecondary-4 {
+    background-color: #18A0FB !important;
+}
+
+.my_profile_tabs .MuiButtonBase-root {
+    border: 1px solid #fff6f6 !important;
+}
+.MuiPaper-elevation4 {
+    box-shadow: unset !important;
+}
+.my_profile_tabs{
+	padding-top:0.5rem !important;
+	padding-bottom:1.5rem !important;
+}
+.my_profile_tabs button:focus {
+    outline: unset !important;
+}
+
+/* Payments */
+.balce_dtl h5 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.015em;
+  color: #000000;
+}
+span.my_coins {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+  color: #181818;
+}
+.balce_dtl h4 {
+  font-size: 24px;
+  line-height: 23px;
+  color: #18A0FB;
+}
+ul.addrss_list li {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 30px;
+  color: #000000;
+  text-transform: capitalize;
+}
+span.no_coins {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 30px;
+  letter-spacing: -0.015em;
+  color: #000000;
+}
+.balce_dtl .blce_dtail_row{
+  padding-bottom: 13px;
+}
+.balce_dtl form .form-check {
+  padding-bottom: 9px;
+}
+.total_amt{
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 17px;
+  color: #000000;
+  padding-top: 18px;
+}
+.dte_psted label{
+  padding-left:10px;
+}
+.buy_cons{
+  margin-top:20px;
+}
+.flter_activty .MuiFormControl-root {
+    width: 100%;
+    max-width: unset;
+}
+.otr_priceng ul.addrss_list li {
+  line-height: 42px;
+}
+.border_div {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px 30px;
+  text-align: center;
+}
+.qualf_meta .quaL_year {
+  margin-bottom: 10px;
+  font-weight: normal !important;
+  font-size: 10px;
+  line-height: 150%;
+  color: #444242;
+}
+
+/* Payments Transaction */
+
+.MuiFormControl-root.MuiTextField-root.fltr_transaction {
+    max-width: 100% !important;
+    background-color: white !important;
+}
+.fltr_trnsction .MuiOutlinedInput-notchedOutline{
+    border-color: #B9DBF2 !important;
+}
+.my_payments_sec .srt_jobs::after{
+	content: "";
+	display: block;
+	width: 500px;
+	height: 2px;
+	background: #000;
+	right: 0;
+	top: 50%;
+	position: absolute;
+	border: 1px solid #E7E7E7;
+}
+.my_payments_sec .srt_jobs::before{
+	content: "";
+	display: block;
+	width: 480px;
+	height: 2px;
+	background: #000;
+	left: 0;
+	top: 50%;
+	position: absolute;
+	border: 1px solid #E7E7E7;
+}
+.my_payments_sec .srt_jobs .MuiOutlinedInput-notchedOutline{
+    border: unset !important;
+}
+.my_payments_sec .srt_jobs .MuiInputLabel-outlined {
+    color: #18A0FB !important;
+}
+.my_payments_sec .srt_jobs {
+    padding: 20px; 
+}
+
+
+.img-fluid_trnscton{
+	width:35px;
+	height: 35px;
+	object-fit: cover;
+}
+.all_crdts {
+  color: black !important;
+  font-size: 14px;
+  margin-bottom: 0;
+  text-transform: capitalize;
+}
+.transction_card_dtails{
+	margin-top: 15px;
+}
+.img_col{
+	max-width: 5.333% !important;
+}
+.pgnation{
+	margin-top:50px;
+}
+.my_payments_sec .MuiSelect-iconOutlined {
+    right: 15px;
+}
+.pgnation{
+	margin-top:200px;
+}
+.fltr_trnsction .MuiInputBase-input {
+    border: 1px solid #B9DBF2 !important;
+}
+
+
+/* teachers dashboard */
+.fltr_jobs_div .form-check-input {
+    position: absolute;
+    margin-top: 2px;
+    margin-left: -1.25rem;
+}
+span.page_count {
+
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    color: #6E6893;
+    display: inline-block;
+}
+.job_dedlne2 {
+    padding: 0px;
+}
+.job_deadline_notifction.card {
+    /* margin-top: 50px; */
+}
+p.notify_info {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 170%;
+  color: #181818;
+  padding: 0;
+  opacity: 1;
+}
+.post_chips span.MuiIconButton-label {
+    display: none;
+}
+.per_inr span {
+    padding-right: 10px;
+}
+span.name_new {
+  color: #18A0FB;
+  background: rgba(24, 160, 251, 0.1);
+  padding: 5px 10px;
+  border-radius: 50px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.job_deadline_notifction .img-fluid , .job_notifction .img-fluid{
+  width: 45px;
+}
+.img-fluid-dots{
+  width: 23px;
+}
+.job_notifction.card {
+    margin-top: 20px;
+}
+
+span.cnt_us{
+  color: #18A0FB;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 170%;
+  padding: 0;
+}
+
+.bedge_dsgn.col-12{
+  margin-top: 15px;
+}
+.prdct_dsgn.row {
+  padding-top: 10px;
+}
+.srch_job{
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 11px;
+  color: #181818;
+}
+.fltr_clre{
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 11px;
+  text-transform: uppercase;
+  color: #18A0FB;
+}
+.serch_card{
+  padding: 0.5rem;
+}
+.serch_iconn {
+    margin-top: 0px;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    right: 1px;
+    top: 3px;
+}
+
+.img_tag_wrp {
+  position: relative;
+  min-height: 40px;
+  padding-right: 50px;
+}
+.img_tag_wrp span.MuiChip-label {
+    color: #000;
+}
+.img_tag_wrp .MuiSvgIcon-root {
+  fill: #000 !important;
+
+}
+p.meta_data{
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 150%;
+  color: #181818;
+  padding-bottom: 0px;
+  padding-top: 21px;
+  display: inline-block;
+  text-transform: capitalize;
+}
+span.amt_fee {
+  display: inline-block;
+  font-size: 11px;
+}
+img.nxt_img {
+    max-width: 410px;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+}
+.job_dedlne2.number_counts.card{
+  margin-top:200px;
+}
+.recent_vwed_jobs {
+    margin-top: 20px;
+}
+.width-form .PrivateNotchedOutline-root-3{
+  border:1px solid red;
+}
+.selct_col .MuiFormControl-root {
+    width: 100%;
+    max-width: 343px;
+    margin-top:10px;
+}
+.selct_col {
+  /*margin-top: 12px;*/
+  margin-bottom: 0;
+}
+.selct_col .width_form {
+  padding-top: 0;
+  padding: 5px 0;
+}
+.MuiSwitch-root .MuiButtonBase-root {
+    background: transparent !important;
+}
+.custom-control-input:checked~.custom-control-label::before {
+  color: #fff;
+  border-color: #18A0FB !important;
+  background-color: #18A0FB !important;
+}
+
+.max_dist_row{
+  margin-top:18px;
+}
+.max_dist_row span, .srch_job{
+  font-weight: 700;
+}
+
+img.img-fluid1 {
+  width: 345px;
+}
+span.fee_dtail{
+  padding-top:5px;
+  display: inline-block;
+}
+span.status_open {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 150%;
+  color: #000000;
+}
+.MuiSlider-root {
+  color: #18A0FB !important;
+}
+
+.onlne_task span{
+  font-size: 15px;
+  display: inline-block;
+  font-weight: 700 !important;
+}
+.onlne_task_attachments span{ 
+  margin-top: 25px;
+  display: inline-block;
+  font-size: 13px;
+}
+
+.rmt_only_coll.col-12 span {
+    font-size: 10px;
+}
+.prsnal_info{
+  margin-top: 20px;
+}
+span.bgt {
+  font-size: 12px;
+  color: #181818;
+  min-width: 190px;
+  display: inline-block;
+  font-weight: 400;
+}
+span.bgt1 {
+  
+  min-width: 60px;
+  font-size: 12px;
+  line-height: 150%;
+  color: #181818;
+}
+span.bgt_dtail {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 150%;
+  color: #18A0FB;
+  margin-left: 60px !important;
+  text-transform: capitalize;
+}
+img.teach_dtail_img {
+  width: 100%;
+  display: inline-block;
+  margin-top: 16px;
+  object-fit: contain;
+  height: 400px;
+}
+.wrk_dsgntion {
+  background: rgba(33, 33, 33, 0.08);
+  border-radius: 16px;
+  padding: 10px;
+  color: #181818 !important;
+  font-size: 12px !important ;
+  display: inline-block;
+  margin-top: 30px;
+  font-weight: 500 !important;
+  margin-right: 25px !important;
+}
+.sbjects_dtail{
+  margin-top:15px;
+}
+.hrdo_col.col-2 {
+  max-width: 13%;
+}
+.sbjects_btn_dtail span {
+  font-size: 13px;
+  color: #18A0FB;
+}
+
+img.ban-prfle {
+  width: 100%;
+  height: 150px;
+  position: relative;
+}
+.all_tutor_dtail.card {
+  padding: 0;
+}
+.psted_by .srch_job {
+  padding: 25px;
+  display: inline-block;
+}
+img.img-profle {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
+}
+.name_dtail{
+  padding: 20px;
+  padding-top: 20px;
+  text-align: left;
+  padding-bottom: 16px;
+}
+.name_dtail span {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 13px;
+  color: #181818;
+}
+.age_dtail{
+  font-size: 10px !important;
+  color: rgba(0, 0, 0, 0.41) !important;
+}
+.dtail_of_tutor{
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 19px;
+  color: #181818;
+  padding-top: 10px;
+  text-transform: capitalize;
+}
+span.lst_login {
+  font-size: 12px;
+  line-height: 150%;
+  color: #181818;
+  min-width: 157px;
+  display: inline-block;
+}
+span.lst_log {
+  display: inline-block;
+  min-width: 15px;
+  font-size: 12px;
+  line-height: 150%;
+  color: #181818;
+}
+span.last_dtail {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 150%;
+  color: #18A0FB;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.lst_lgn_div{
+  padding-left:20px;
+}
+
+.prfle_btn_dtail .MuiButton-outlinedPrimary {
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+}
+img.chk_icon {
+    width: 15px;
+    margin-left: 10px;
+}
+
+/*db header */
+p.text-muted.tutor_head {
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 11px;
+  text-transform: uppercase;
+  color: rgba(24, 24, 24, 0.62);
+  padding-top: 5px;
+  padding-left: 8px;
+}
+.post_chips .MuiOutlinedInput-notchedOutline {
+    border-style: unset !important;
+}
+/*.col_flter_job .PrivateNotchedOutline-root-3 {
+    border-style: unset !important;
+}*/
+
+.hedng_job, .job_dtail{
+  font-weight: bold;
+  font-size: 14px !important;
+  line-height: 150%;
+  color: #181818;
+}
+.job_dtail{
+  color: #18A0FB !important;
+}
+p.meta_data_job {
+    font-size: 13px;
+    color: #000000;
+}
+
+.nav_icon1{
+  width: 23px;
+  height: 22px;
+}
+.nav_icons{
+  width:27px;
+}
+
+small.nmbr_cntr.text-muted {
+  padding-right: 15px;
+}
+.updt_sidbr .card-title{
+  padding-top: 19px;
+}
+.updat_prfle_title.card-title {
+  font-weight: 600;
+  line-height: 11px;
+  color: #000000;
+  font-size: 18px;
+}
+.submit_dtail_btn a {
+    margin-left: 20px;
+}
+.MuiChip-root.MuiChip-deletable {
+    margin: 6px 3px 0;
+}
+.sub_chips .MuiAutocomplete-inputRoot[class*="MuiOutlinedInput-root"] {
+  padding: 0px; 
+}
+.nmbr_cntr {
+  padding-right: 20px;
+}
+.card_uplod_docs .makeStyles-formControl-1 {
+  max-width: 400px !important;
+  min-width: 185px;
+}
+.MuiButton-containedPrimary {
+  color: #fff;
+  background-color: #18A0FB !important;
+}
+
+
+/*   */
+
+span.wrk_dsgntionn {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 9px;
+  padding-top: 6px;
+  display: inline-block;
+  padding-left: 7px;
+}
+.student_jbs_sidbr span.wrk_dsgntionn , .myjbs_sidbr span.wrk_dsgntionn {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 9px;
+  padding-top: 6px;
+  display: inline-block;
+  padding-left: 12px;
+}
+.MuiTab-textColorInherit {
+  opacity: unset !important;
+}
+
+
+
+/*29/4 */
+.wraper_sgnup .container {
+    max-width: 1200px !important;
+}
+.trms_plcy_chk.MuiIconButton-colorPrimary {
+    padding: 0px !important;
+}
+.check_fleid.form-check {
+  margin-bottom: 10px;
+  padding-left: 0 !important;
+  font-size: 11px;
+  font-weight: 700;
+}
+p.alrd_regstrd {
+  font-weight: 400;
+  font-size: 11px;
+  padding-top: 12px;
+  color: #414141;
+}
+.prvcy_trms .MuiSvgIcon-root{
+  font-size: 17px;
+}
+.prvcy_trms span {
+  font-size: 11px;
+  font-weight: 400;
+  color:#414141;
+}
+.slid_inside p {
+  padding: 20px 0;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 60%;
+  color: #000000;
+}
+.register_slider.card {
+    /*min-height: 582px;*/
+    padding: 106px 10px;
+}
+.sgnup_frm h6.card-title {
+  font-weight: 400;
+  font-size: 11px;
+  margin-bottom: 2px;
+}
+.socail_up p {
+  font-size: 12px;
+  font-weight: 400;
+  color:#414141;
+  padding-bottom: 8px;
+}
+.img_side p {
+  font-size: 17px !important;
+  color: rgb(25 24 24 / 80%);
+  letter-spacing: -0.015em;
+  padding-right: 60px;
+  max-height: 130px;
+  overflow: hidden;
+}
+.react-slideshow-container {
+  align-items: center;
+}
+.sgnup_frm a 
+{
+  color: #18A0FB !important;
+}
+.logn_slider.card {
+  /*min-height: 463px;*/
+  padding: 43px 10px;
+}
+.verf_slider.card {
+    padding: 77px 0;
+}
+.vrfction_lnk{
+  font-size: 12px;
+  color: #000000;
+  margin-bottom: 17px;
+}
+.lgn_frm h6 {
+  font-weight: 400;
+  font-size: 11px;
+  padding-top: 10px;
+}
+.sgnup_div .col-sm-3{
+  max-width: 18%;
+}
+.alias_note {
+  font-size: 10px;
+  background: #E7F0FF;
+  padding: 6px 4px;
+  position: absolute;
+  right: 16px;
+  border-radius: 5px;
+  text-align: left;
+}
+img.iomgNotf {
+    width: 18px;
+}
+.adrss_dtail textarea.form-control {
+  max-width: 470px;
+}
+.updt_sidbr .card {
+    /*min-height: 1036px;*/
+}
+.MuiButton-contained:hover {
+  box-shadow:unset !important;
+}
+p.text-secondary.id_img {
+  font-size: 10px;
+}
+.lne_spce.col-sm-1 {
+  max-width: 1%;
+}
+.year_dtail.col-sm-2 {
+  padding-left: 5px;
+}
+.udte_prfle_div.sgnup_div label.col-sm-3.col-form-label {
+  max-width: 18%;
+}
+.prvw_dtail{
+  color: #181818;
+}
+section.sgnup_sec {
+  padding-top: 50px;
+  margin-bottom: 0 !important;
+}
+.benefits_sec{
+  padding-top: 0px !important;
+  padding-bottom: 50px !important;
+}
+.sgnup_div-experence .col-sm-3 {
+  max-width: 19%;
+}
+.sgnup_div-experence .form-control{
+  font-size: 12px !important;
+}
+.edu_year.col-sm-2 {
+  padding-left: 4px;
+}
+
+/*30/4*/
+
+.update_prefernce_sec label.col-sm-4.col-form-label, .edit_job_sec label.col-sm-4.col-form-label {
+  max-width: 26%;
+}
+span.clse_sbject {
+  padding-left: 1px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 100%;
+  color: white;
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+  text-align: center;
+  margin-left: 18px;
+}
+.onlne_mde .custom-control-label {
+  color: #000000;
+  font-size: 12px;
+  padding-top: 3px;
+}
+.fee_dtail .makeStyles-formControl-1 {
+  min-width: 100px !important;
+}
+.updt_sidbr_prfence .card {
+    min-height: 400px;
+}
+.my_jobs_sec span.fltr_sbjcts, .student_find_sec span.fltr_sbjcts ,.update_prefernce_sec span.fltr_sbjcts, .edit_job_sec span.fltr_sbjcts ,.fltr_dsgn {
+  background: rgba(33, 33, 33, 0.08);
+  border-radius: 16px;
+  padding: 9px;
+  margin-right: 12px;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: 900;
+}
+
+img.img-fluidd {
+  max-width: unset !important;
+  height: auto;
+  width: 48px;
+}
+.my_job_sec_row {
+  padding-bottom: 35px;
+}
+.job_post_divv .MuiButton-outlinedPrimary {
+    min-width: 233px;
+}
+.assgnment_dtail {
+  font-size: 13px !important;
+  color: #18a0fb !important;
+  text-transform: capitalize;
+}
+ul.MuiList-root.MuiMenu-list.MuiList-padding li {
+  font-size: 12px;
+}
+.updt_sidbr .MuiButton-containedPrimary {
+    color: #18A0FB !important;
+    background-color: white !important;
+    box-shadow: none;
+    border: 1px solid #18A0FB !important;
+    font-size: 12px;
+}
+.my_jbs_title.card-title {
+  font-size: 12px;
+  margin-bottom: 0px !important;
+}
+.nxt_icon_dtail.col-1{
+  max-width: 7.333333%;
+}
+.ntfction_dtails {
+  margin-bottom: 30px;
+}
+
+.col-form-label {
+  font-weight: 500 !important;
+  font-size: 12px;
+  color: #181818;
+}
+.wrk_type .form-control {
+  border: none !important;
+  font-size: 12px !important;
+  padding-left: 0 !important;
+
+}
+.wrk_type label.inpt_labe_open.form-check-label ,.form-check-label{
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+  color: #000000;
+}
+.wrk_type .col-form-label{
+  padding-top: 10px!important;
+  padding-bottom:5px !important;
+}
+label.help_mode.col-sm-12.col-form-label {
+  display: inline-block;
+  margin-top: 6px;
+}
+.form-check{
+  padding-bottom: 2px;
+}
+.updt_sidbr_requirement .card {
+    min-height: 870px;
+}
+.card-title{
+  margin-bottom: 15px;
+}
+.mail_us .MuiFormControl-root{
+  min-width:420px;
+}
+.form-control, textarea.form-control {
+  font-size: 12px !important;
+}
+.post_jobs_sec .updt_sidbr_requirement .card{
+   min-height:592px;
+}
+.pst_job_dtial .col-sm-4{
+  max-width: 30%;
+}
+.pst_job_dtial .custom-switch .custom-control-label::after{
+  background: rgb(0 0 0 / 69%) !important;
+  width: 19px;
+  height: 18px;
+  border-radius: 100%;
+  position: absolute;
+  bottom: 0;
+  top: 4px;
+  right: 0;
+  left:-34px;
+}
+.pst_job_dtial .custom-control-label::before {
+  background-color: rgba(0, 0, 0, 0.38) !important;
+  border: #adb5bd solid 1px;
+  left: -35.2px;
+  width: 2.0rem;
+  height: 18px;
+}
+.my_payments_sec .card{
+  margin-bottom: 25px;
+}
+.balce_dtl h6 {
+  padding-bottom: 0px;
+  padding-top: 7px;
+}
+.MuiFormLabel-root, .MuiInputBase-root  {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 12px !important;
+  font-family: 'Montserrat' !important;
+  font-weight: 300;
+}
+.entr_passwod.form-group {
+  margin-bottom: 3px !important;
+}
+.width_form {
+  padding-top: 12px;
+}
+.updte_prfle_div {
+  padding-top: 12px;
+}
+.udte_prfle_div.sgnup_div p , .sgnup_div-experence p {
+  font-size: 14px;
+  font-weight: 600;
+  color: #000000;
+  margin-top: 6px;
+  display: inline-block;
+}
+.card_uplod_docs .card-title {
+  padding-top: 20px;
+  display: inline-block;
+}
+.srch_icon{
+  padding-left: 0;
+}
+.dedlne_jobs_div .col-1{
+  max-width: 7%;
+}
+.fltr_jobs_div .width_form{
+  padding-top: 0 !important;
+}
+.flter_assignment_col.col-12 {
+  padding-bottom: 9px;
+}
+.MuiOutlinedInput-root{
+  font-size: 14px;
+}
+
+/*activities*/
+
+.flter_activty_dtail.row.form-group .MuiOutlinedInput-root {
+  background: #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 6px;
+  min-width: 1247px;
+}
+.flter_activty_dtail.row.form-group .MuiInputLabel-outlined {
+  font-size: 14px !important;
+  padding-left: 53px;
+}
+.flter_activty_dtail.row.form-group .MuiOutlinedInput-input {
+  padding: 8px 53px !important;
+}
+.MuiFormControl-root.MuiTextField-root.fltr_actvity_fld {
+  position: relative;
+}
+img.img-flter {
+  position: absolute;
+  width: 17px;
+  bottom: 0;
+  top: 7px;
+  left: 30px;
+}
+.activities_sec select#sel1 {
+  border: 0;
+  background: no-repeat;
+  color: #18A0FB;
+  font-weight: 600;
+  font-size: 13px !important;
+}
+.flter_row_dtail select#sel1 {
+  border: 0;
+  background: no-repeat;
+  color: #181818;
+  font-weight: 600;
+  font-size: 13px !important;
+}
+.activities_sec .form-control:focus {
+  background-color: #fff;
+  border-color: unset !important;
+  border: 0 !important;
+  outline: 0;
+  box-shadow: unset !important;
+  transition: none !important;
+}
+.activities_sec .srt_jobs::before {
+  content: "";
+  display: block;
+  width: 502px;
+  height: 2px;
+  background: #000;
+  left: 0;
+  top: 50%;
+  position: absolute;
+  border: 1px solid #E7E7E7;
+}
+.activities_sec .srt_jobs::after {
+  content: "";
+  display: block;
+  width: 520px;
+  height: 2px;
+  background: #000;
+  right: 0;
+  top: 50%;
+  position: absolute;
+  border: 1px solid #E7E7E7;
+}
+.activities_sec .job_deadline_notifction.card {
+  margin-top: 10px;
+}
+
+.prfle_ntfcton img{
+  position: relative;
+}
+.avtar_ntfcton img{
+  position: absolute;
+  left: 38px;
+}
+.avtars_ntfcton img{
+  position: absolute;
+  left: 57px;
+}
+.activities_sec p.notify_info , span.time_dtail{
+  padding-left: 15px;
+}
+.warning_info .notify_info{
+  color: #FF3333;
+}
+.number_counts .MuiOutlinedInput-notchedOutline {
+  border: 0 !important;
+}
+
+/* Tabs */
+.MuiTabs-flexContainer {
+  display: unset !important; 
+}
+.tabs_inr_page .MuiBox-root {
+    padding: 20px 0;
+}
+.MuiBox-root {
+    padding: 20px 0 !important;
+}
+.MuiTab-wrapper {
+  font-family: 'Montserrat';
+}
+.ovral_ratng ul {
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+.rtng_lst_lst {
+    padding: 30px 0;
+    border-top: 1px solid #eee;
+}
+.name_post_dt p {
+    font-size: 13px;
+    color: #000;
+    opacity: 50%;
+}
+.name_post_dt h5 {
+  margin-bottom: 3px;
+  font-size: 17px;
+}
+p.rtng_feed {
+    font-size: 14px;
+}
+
+/* Tabs end */
+
+a.edt_btn_dtail {
+  color: #18A0FB !important;
+  font-size: 13px;
+}
+.buy_coins_col{
+  max-width: 45%;
+}
+span.text-muted.tme_dtail {
+  font-size: 12px;
+}
+span.inln_pagnt {
+  cursor: pointer;
+    padding: 0 24px;
+}
+.flter_activty .MuiInputLabel-outlined {
+    transform: translate(58px, 6px) scale(1) !important;
+}
+.flter_activty .MuiInputLabel-outlined.MuiInputLabel-shrink {
+    transform: translate(14px, -6px) scale(0.75) !important;
+}
+.dedlne_jobs_div .vrtcal_lne {
+  border-left: 1px solid #ececec;
+  height: 62px;
+  position: absolute;
+  left: 72.9%;
+  top: -13px;
+}
+img.nav_iconns {
+  width: 32px;
+  margin-right: 10px;
+}
+.ntfction_dtails  .dropdown-toggle::after, .job_notifction .dropdown-toggle::after{
+  display: none;
+}
+/*.dropdown-menu.show {
+  display: block;
+  transform: translate3d(-4px, 19px, 0px) !important;
+  width: 265px;
+  min-height: 44px;
+  left: 913px;
+  top: 1506px;
+  background: #FFFFFF;
+  border: 1px solid #C6C2DE;
+  box-sizing: border-box;
+  box-shadow: 0px 5px 8px rgb(0 0 0 / 20%);
+  border-radius: 6px;
+}*/
+.dropdown-menu {
+    border-radius: 6px;
+    box-shadow: 0px 5px 8px rgb(0 0 0 / 20%);
+}
+.job_notifction .dropdown-menu.show {
+  transform: translate3d(-110px, 19px, 0px) !important;
+  min-width: 224px;
+  min-height: 44px;
+  box-shadow: 0px 5px 8px rgb(0 0 0 / 20%);
+  border-radius: 6px;
+}
+.dropdown-item.active, .dropdown-item:active {
+    color: #181818;
+}
+.dropdown-item {
+  width: 90%;
+  font-size: 13px;
+  font-weight: 600;
+  margin-left: 12px;
+}
+.dte_psted .MuiFormControl-root{
+  max-width: 150px !important;
+}
+
+.srt_by_col .dropdown-toggle::after {
+    margin-left: 0.95em !important;
+    vertical-align: 0em !important;
+}
+.job_srt_div1 .dropdown-toggle::after{
+   vertical-align: 0em !important;
+   color: #6E6893 !important;
+}
+span.srt_drpdwns {
+  font-size: 13px;
+  font-weight: 600;
+}
+.my_payments_sec .srt_jobs::before {
+  content: "";
+  display: block;
+  width: 445px;
+  height: 2px;
+  background: #000;
+  left: 0;
+  top: 50%;
+  position: absolute;
+  border: 1px solid #E7E7E7;
+}
+.my_payments_sec .srt_jobs::after {
+  content: "";
+  display: block;
+  width: 563px;
+  height: 2px;
+  background: #000;
+  right: 0;
+  top: 50%;
+  position: absolute;
+  border: 1px solid #E7E7E7;
+}
+span.srt_rows {
+  font-size: 12px;
+  color: #6E6893;
+  font-weight: 600;
+}
+h6.payments_issues.card-title {
+  font-weight: 500;
+  font-size: 14px;
+}
+.fltr_clr {
+  color: #18A0FB;
+  font-size: 14px;
+  font-weight: 600;
+}
+.transaction_issue_dtail span.dte_deadline {
+  color: #18A0FB;
+  font-size: 14px;
+}
+.transaction_issue_dtail .assgnment_dtail {
+  font-size: 14px !important;
+  color: #18a0fb !important;
+}
+.new_class_wid .MuiFormControl-fullWidth {
+    width: 100%;
+    max-width: 100%;
+}
+.time_dtail span {
+  font-size: 11px;
+  color: rgba(0, 0, 0, 0.44);
+  font-weight: 500;
+}
+p.transction_dtail{
+  font-size: 14px;
+  opacity: 1;
+}
+.transaction_resolved_dtail .MuiAccordion-root {
+  margin: 20px 0;
+}
+.MuiPaper-elevation1 {
+  box-shadow: unset !important;
+}
+.jss2 {
+  width: 100%
+}
+.MuiAccordion-root:before {
+  display: none;
+}
+a.nav-link {
+  font-size: 13px;
+  color: #181818;
+}
+a.dropdown-item:hover {
+  background: #F7F9FB;
+}
+.ans_resp_div {
+  margin-top: 30px;
+  padding: 0 10px;
+}
+.ans_resp_div h3 {
+  font-size: 17px;
+}
+/*confirm post job*/
+
+h6.cnfrm_job_ttle.card-title {
+  margin-top: 14px;
+  padding-left: 20px;
+  color: #181818;
+}
+.sbjects_dtail.row .sbject_col {
+  max-width: 16%;
+}
+.MuiButton-label {
+  color: #18A0FB !important;
+  font-size: 12px !important;
+  font-family: 'Montserrat', sans-serif !important;
+}
+.dsh_btn_dtails .MuiButton-outlinedPrimary {
+    margin-top: 65px !important;
+}
+img.cnfrm_job_img {
+    margin-top: 10px;
+    border: 3px solid #e2dada;
+    width:570px;                                       
+    height:400px;
+    object-fit: contain; 
+}
+span.pst_dat {
+  font-size: 13px;
+  padding-left: 9px;
+  font-weight: 500;
+}
+.dte_pst .dropdown-toggle::after {
+  margin-left: 0.255em !important;
+  vertical-align: 0em !important;
+}
+.erler_span{
+  color: #181818;
+  font-size: 13px;
+  font-weight: 500;
+}
+.dte_post .dropdown-toggle::after {
+  margin-left: 1.255em !important;
+  vertical-align: 0em !important;
+  color: black;
+}
+
+/**/
+
+.sbject_cols.col-3 {
+  max-width: 24%;
+}
+.clarifction_dtail{
+  color: #18A0FB !important;
+  font-size: 12px;
+  font-weight: 400;
+  padding-left: 15px;
+  padding-bottom: 15px;
+}
+img.img-fluids {
+  width: 27px;
+}
+.job_dscrption_dtail{
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+.stu_job_dtail.card {
+  margin-top: 32px;
+}
+.student_job_dtail span.dte_deadline {
+  color: #18A0FB;
+  font-size: 11px;
+}
+.student_job_dtail span.hedng_dedlne {
+  color: #181818;
+  font-size: 11px;
+}
+.stu_job_sidbr .MuiButton-root{
+  min-width: 230px;
+}
+.cntct_dtail{
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 150%;
+  color: #181818;
+  padding-top: 4px;
+}
+img.img-tutor {
+  width: 46px;
+  height: 46px;
+}
+.student_job_dtail .crdts_col {
+    padding-left: 30px !important;
+}
+span.applied_dtail {
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 150%;
+  color: #181818;
+}
+.rows_page_count .job_dedlne2.number_counts.card {
+    margin-top: 10px !important;
+}
+
+
+/* student profile*/
+.report_icon{ 
+  width: 105px;
+}
+.lst_login_dtail span.hedng_dedlne {
+  color: #181818;
+  font-size: 12px;
+  border-radius: 4px;
+  position: absolute;
+  left: calc(41% - 429.66px/2 - 199.17px);
+  top: 88px;
+}
+.student_prfle_sec span.dte_deadline {
+  color: #18A0FB;
+  font-size: 12px;
+  position: absolute;
+  left: calc(47% - 429.66px/2 - 199.17px);
+  top: 89px;
+}
+.student_prfle_sec .prfile_divv{
+  position: absolute;
+  right: 0px;
+  top: 10px;
+}
+.prfile_divv .dropdown-toggle::after {
+  display: none;
+}
+.prfile_divv .dropdown-menu.show {
+  background: #FFFFFF;
+  border: 1px solid #C6C2DE;
+  box-shadow: 0px 5px 8px rgb(0 0 0 / 20%);
+  border-radius: 6px;
+}
+img.prvcy_btn {
+    width: 10px;
+    margin-right: 4px;
+    margin-bottom: 3px;
+    margin-left: 10px;
+}
+span.verfd_prof {
+    padding-left: 30px;
+    color: #18a0fb;
+    font-size: 12px;
+    font-weight: 500;
+}
+.contct_dtails {
+  font-size: 12px;
+  color: #18A0FB;
+  padding: 5px 20px;
+  font-weight: 500;
+  display: inline-block;
+  border-radius: 7px;
+}
+button.cntact_info {
+  background: #FFFFFF;
+  border: 2px solid #18A0FB;
+  box-sizing: border-box;
+  border-radius: 4px;
+  height: 32px;
+}
+.clarifcation_btn .cntact_info {
+  background: #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 4px;
+  height: 32px;
+}
+span.vrfication{
+  font-size: 11px;
+  color:#181818;
+  font-weight: 500;
+}
+.meta_dtail_verify{
+  margin-top:35px;
+}
+.teaching_expernce span {
+  margin-top: 35px !important;
+  display: inline-block;
+  font-size: 13px;
+}
+.dtail_year{
+  margin-right: 54px;
+  color:#18A0FB;
+  font-weight: 300;
+}
+.teach_expernce{
+  color: #181818;
+  font-weight: 300;
+}
+.student_prfle_sec .MuiBox-root.jss8, .student_prfle_sec .MuiBox-root , .my_prfle_sec .MuiBox-root.jss8 , .my_prfle_sec .MuiBox-root.jss10 {
+  padding-left:0 !important;
+  padding-bottom: 0 !important;
+}
+.regster_card.card {
+  padding: 5px 10px;
+}
+.regster_card .card-body {
+  padding: 0.4rem;
+}
+.regster_card .availble_mode {
+    padding-top: 0px;
+}
+.regster_card .availble_mode span {
+    font-size: 14px;
+}
+.rating_prfle {
+  position: absolute;
+  width: 200px;
+  height: 27px;
+  top: -16px;
+  right: 29px;
+  bottom: 5px;
+}
+.rating_prfle .MuiSvgIcon-root , .rte_prfle .MuiSvgIcon-root, .clr-rating .MuiSvgIcon-root, .rting_prfle_rating .MuiSvgIcon-root{
+  fill: #FBBB17 !important;
+}
+.rate_span{
+  color: #181818;
+  padding-top: 2px !important;
+  display: inline-block;
+  position: absolute;
+  width: 200px;
+  height: 27px;
+  top: -45px;
+  right: 72px;
+  bottom: 5px;
+  font-size: 12px;
+}
+.hw_mch_rate{
+  color: #181818 !important;
+  font-size: 12px !important;
+  padding-right: 14px;
+}
+p.assgnment_dtail{
+  font-size: 13px;
+  line-height: 150%;
+  color: #181818;
+  font-weight: 500;
+  margin-top: 18px;
+}
+.tme_dtails{
+  font-size: 10px !important;
+  color: #181818 !important;
+}
+.lne .vrtcal_lne{
+  padding-left: 17px;
+  position: absolute;
+  left: 149px;
+  height: 51px;
+  top: 16px;
+}
+.MuiSwitch-colorPrimary.Mui-checked {
+  color:#18A0FB !important;
+}
+.my_jobs_sec .MuiTouchRipple-root ,.student_find_sec .MuiTouchRipple-root , .update_prefernce_sec .MuiTouchRipple-root{
+  border: none !important;
+}
+.MuiSwitch-colorPrimary.Mui-checked + .MuiSwitch-track {
+  background-color: rgba(111, 197, 255, 0.41) !important;
+}
+.srch_tutors{
+  margin-top: 20px;
+}
+.student_find_sec .srt_iconn {
+  padding-left: 84px !important;
+}
+.student_find_sec .crdts_col.col-7 {
+    margin-left: 23px;
+}
+.prfle_availbility{
+  margin-top: 25px;
+ font-size: 13px;
+}
+.sbjects_dtail_coins{
+  font-size: 11px;
+}
+.my_jobs_sec .srt_iconn {
+  padding-left: 0px !important;
+}
+.tme_dtailss{
+  color: #181818;
+  font-weight: 300 !important;
+}
+.student_find_sec .id_crd_img p{
+  font-size:12px;
+  color: #181818 !important;
+  font-weight: 300;
+}
+.rws_count_dtail{
+  margin-top:18px;
+}
+.rws_count_dtail .card-body {
+    padding: 0.5rem;
+}
+.PrivateValueLabel-circle-15 {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    transform: rotate(-45deg);
+    align-items: center;
+    border-radius: 50% 50% 50% 50% !important;
+    justify-content: center;
+    background-color: currentColor;
+    position: absolute !important;
+    top: 33px !important;
+}
+.MuiSlider-markLabelActive{
+  color: #181818 !important;
+  font-weight: 300 !important;
+  font-size: 11px !important;
+}
+.header_db .dropdown-menu.show {
+  display: block;
+  transform: translate3d(25px, 48px, 0px) !important;
+  width: 224px;
+  min-height: 44px;
+  left: 913px;
+  top: 1506px;
+  background: #FFFFFF;
+  border: 1px solid #C6C2DE;
+  box-sizing: border-box;
+  box-shadow: 0px 5px 8px rgb(0 0 0 / 20%);
+  border-radius: 6px;
+}
+
+/*view contact page*/
+
+.flter_messages.row.form-group .MuiOutlinedInput-root {
+  background: #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 6px;
+  min-width: 400px;
+  padding-left: 40px;
+}
+.flter_messages .MuiInputLabel-outlined {
+	padding-left: 40px;
+}
+.thnks_ttl.card-title {
+    margin: 0 0 6px;
+    font-size: 20px;
+    font-weight: 500;
+}
+/*=============Rohit css 10 may=======================*/
+.sgnup_btn{
+  padding: 3px 30px !important;
+}
+.MuiTouchRipple-root {
+  border: unset;
+}
+.MuiInput-underline:before {
+    border-bottom: 1px solid #18A0FB !important;
+}
+.delt_icon{
+  cursor: pointer;
+}
+.maps_location{
+  margin-top: 10px;
+}
+.sel_users fieldset legend > span {
+    padding-right: 25px;
+}
+/*=============Rohit css 10 may=======================*/
+
+.flter_activty_dtail fieldset legend > span {
+    padding-right: 45px;
+}
+.flter_activty_dtail legend {
+    margin-left: 25px;
+}
+.flter_messages legend {
+    margin-left: 30px;
+}
+.add_docs fieldset legend > span{
+  padding-right: 20px;
+}
+/*--------------   --------------------- */
+
+img.drop_img {
+    width: 19px;
+    margin-top: 8px;
+}
+.viw_contct_div .dropdown-toggle::after {
+    display: none !important;
+}
+.chats_tutor_card{
+  margin-top: 15px;
+  padding: 10px 6px;
+  /* border-left: 6px solid #18A0FB; */
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+.ntfction_count{
+  position: absolute;
+  background: #18A0FB !important;
+  padding-left: 2px;
+  padding-top: 1px;
+  border-radius: 100%;
+  color: white;
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  bottom: 35px;
+  font-size: 8px;
+  font-weight: 700;
+  left: 53px;
+}
+.tutors_dtail{
+  margin-top: 5px;
+}
+.lst_seen_dtail{
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 400;
+  padding-left: 10px;
+}
+.share_mdia {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 900;
+    padding-left: 10px;
+    color: #181818;
+}
+.chat_div .srt_jobs::before {
+    content: "";
+    display: block;
+    width: 280px;
+    height: 2px;
+    background: #000;
+    left: 0;
+    top: 50%;
+    position: absolute;
+    border: 1px solid #f5f3f3;
+}
+.chat_div .srt_jobs::after {
+    content: "";
+    display: block;
+    width: 280px;
+    height: 2px;
+    background: #000;
+    right: 0;
+    top: 50%;
+    position: absolute;
+    border: 1px solid #f5f3f3;
+}
+img.submit_img {
+    width: 35px;
+    object-fit: cover;
+}
+span.chat_dtail_job, span.chat_dtail_job1, p.chat_dtail_job2 {
+    background: #fff !important;
+    font-size: 13px;
+    color: #181818;
+    display: inline-flex;
+    margin-right: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 1px 1px rgb(0 0 0 / 15%);
+    border-radius: 12px;
+    padding: 10px;
+    text-align: left;
+}
+ p.chat_dtail_job2 {
+    margin-right: 58px;
+    margin-top: 10px;
+ }
+.width_msg_dtail p {
+    background: #D8F2FF;
+    border-radius: 12px;
+    color: #181818;
+    font-size: 11px;
+    font-weight: 400;
+    padding: 13px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 1px 1px rgba(216, 242, 255, 0.25);
+    padding: 10px;
+}
+span.tme{
+  font-size: 10px;
+}
+.right_msgg .tme{
+  margin-right: 56px;
+}
+.msg_dtail_rows .MuiOutlinedInput-notchedOutline {
+    border-color: rgba(0, 0, 0, 0.23);
+    border: none;
+}
+.msg_dtail_rows .MuiSelect-icon {
+    top: calc(50% - 12px);
+    color: rgba(0, 0, 0, 0.54);
+    right: 0 !important;
+    position: absolute;
+    pointer-events: none;
+    /* margin-left: 26px; */
+    left: 129px !important;
+}
+.msg_dtail_rows .MuiSelect-iconOutlined{
+  right: 0 !important;
+}
+.msg_dtail_rows .card-body {
+  padding: 0;
+}
+.msg_dtail_rows {
+    margin-top: 16.2rem;
+}
+
+/* policy page*/
+.policy_lne{
+  
+  width:70%;
+  text-align: center;
+  margin:0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: inline-block;
+  border: 1px solid #ececec;
+}
+.content_of_policy{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+span.update_date{
+  display: inline-block;
+  font-size: 12px;
+  color: black;
+  font-style: italic;
+  padding-bottom: 18px;
+}
+.policy_card .cardbody{
+  padding:2rem;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.policy_card p {
+  margin-bottom: 31px;
+  font-size: 13px;
+  color: #181818;
+  text-align: justify;
+}
+h4.terms_use_polcy {
+    padding-top: 16px;
+}
+.width_msg_dtail{
+  display: flex;
+  align-items: center;
+}
+.width_msg_dtail span.tme {
+  padding-left: 14px;
+}
+span.chat_dtail_job {
+  margin-bottom: 8px;
+}
+
+/* */
+
+.MuiButton-root{
+  font-family: 'Montserrat' !important;
+  padding: 4px 16px !important;
+}
+
+.add_docs .MuiFormControl-root {
+    width: 100%;
+    max-width: 344px;
+}
+
+/*  ----------------------     */
+.img_clearnce{
+  margin-top: 2rem;
+}
+.MuiInput-underline:after {
+    border-bottom: 2px solid #18A0FB !important;
+}
+.del_icon .MuiSvgIcon-root {
+    fill: #181818 !important;
+    font-size: 20px;
+}
+.eduction_card {
+    min-height: 560px !important;
+}
+.eduction_card .id_crd_imgg ,.experce_card .id_crd_imgg {
+  margin-top: 120px !important;
+}
+.experce_card .id_crd_imgg {
+  margin-top: 74px !important;
+  margin-bottom: 15px;
+}
+.year_selct .MuiIconButton-root {
+    padding: 0px !important;
+}
+.year_selct.col-sm-3 {
+    max-width: 19.5%;;
+}
+.autocmplte_dta fieldset{
+  height: 35px;
+  top: 5px;
+}
+.autocmplte_dta label{
+  top: 12px !important;
+}
+.amt_dtail{
+  padding-left: 0;
+}
+.MuiAutocomplete-hasPopupIcon.MuiAutocomplete-hasClearIcon .MuiAutocomplete-inputRoot[class*="MuiOutlinedInput-root"] {
+   padding-right: 0 !important;
+}
+.upload_all_docs label {
+    margin-bottom: 0 !important; 
+}
+.sub_chips .MuiSvgIcon-root {
+  fill: #444141 !important;
+}
+.sub_chips .MuiIconButton-label .MuiSvgIcon-root {
+  fill: #18A0FB !important;
+
+}
+.WAMuiChipInput-underline-16:before {
+    display: none !important;
+    border-bottom: 1px solid #18a0fb !important;
+}
+.WAMuiChipInput-underline-16:after {
+    border-bottom: 1px solid #18a0fb !important;
+}
+.sub_chips .MuiFormControl-root{
+    border-radius: 6px;
+}
+.update_prefernce_sec .MuiFormControl-root {
+    width: 100%;
+    max-width: 305px;
+}
+.WAMuiChipInput-chip-18 {
+    float: left;
+    margin: 4px 13px 8px 6px !important;
+}
+.flter_jobs_card .MuiFormControl-root {
+    width: 100%;
+    max-width: 54.8rem;
+}
+.sbjcts_dtail .MuiSvgIcon-root {
+    font-size: 3rem !important;
+}
+.fltr_dsgn_row .sgnup_btn {
+    /*padding: 3px 30px !important;
+    padding-left: 34px !important;
+    padding-right: 13px !important;*/
+}
+.brk_lines{
+  margin-top: 23px;
+  margin-bottom: 15px;
+}
+.transaction_resolved_dtail .card-body{
+  padding:10px !important;
+}
+span.text-right.resolve_span{
+  color:#18A0FB;
+  font-weight: 500;
+  font-size: 12px;
+}
+.img-fluid-prfle {
+    max-width: unset !important;
+    height: auto;
+    width: 52px;
+}
+
+.stu_job_sidbr .MuiButton-outlinedPrimary {
+    border: 2px solid #18A0FB !important;
+    font-weight: 700;
+}
+.post_fsd img {
+  width: 18px;
+  margin-right: 3px;
+}
+span.post_fsd {
+  position: absolute;
+  right: 14px;
+  display: inline-block;
+}
+
+.css-yk16xz-control, .css-1pahdxg-control {
+  border-color: #18A0FB !important;
+  min-height: unset !important;
+  height: 30px;
+}
+.css-1wa3eu0-placeholder,  .css-1uccc91-singleValue {
+  font-size: 13px;
+  top: 35% !important;
+}
+.css-1hb7zxy-IndicatorsContainer {
+  height: 28px;
+}
+svg.css-tj5bde-Svg {
+    fill: #18a0fb;
+}
+.post_chips .makeStyles-root-2 {
+    width: 100%;
+}
+.post_chips  .MuiFormControl-root {
+    max-width: 100%;
+}
+/*modal*/
+
+.MuiBackdrop-root {
+    background-color: rgb(58 56 56 / 50%)!important;
+}
+.MuiSelect-select {
+  min-width: 200px !important;
+}
+.jss2:focus-visible {
+  outline: unset !important;
+}
+.makeStyles-paper-2:focus-visible {
+  outline: unset !important;
+}
+span.docs_dtail {
+    /* font-size: 13px; */
+    font-weight: 500 !important;
+    font-size: 12px;
+    color: #181818;
+}
+.docs_div{
+  margin-top: 50px;
+}
+.update_prof_sec_stdnt .id_crd_imgg {
+    background-color: #E9F0F8;
+    padding: 2px;
+    font-size: 12px;
+    margin-top: 5rem;
+}
+.id_crd_imgg {
+    background-color: #E9F0F8;
+    padding: 2px;
+    font-size: 12px;
+    margin-top: 12rem;
+}
+.frgt_passwrd_card{
+   height: 460px;
+}
+p.eml_ntfction {
+  font-size: 12px;
+  text-transform: uppercase;
+  line-height: 19px;
+}
+/*---*/
+h6.usr_type {
+    padding-bottom: 13px;
+}
+.makeStyles-modal-1 .makeStyles-paper-2 {
+    border: 2px solid #18A0FB !important;
+    padding: 60px 80px 60px 80px !important;
+    border-radius: 6px;
+}
+.jss1 .jss2 {
+    width: unset !important;
+    padding-bottom: 20px;
+    border: 2px solid #18A0FB !important; 
+    padding: 60px 80px 60px 80px !important;
+    border-radius: 6px;
+}
+.srch_icon_col .srt_iconn {
+    padding-left: 22px !important;
+}
+.dte_pst_col .pst_dat{
+  font-size: 13px;
+  padding-left: 0 !important;
+  font-weight: 500;
+}
+.srt_jobs .dropdown-toggle::after {
+  margin-left: 0.255em !important;
+  vertical-align: 0em !important;
+}
+/* .img_tag_wrp .MuiSvgIcon-root {
+    height: 31px;
+    fill: white !important;
+    background: #18A0FB !important;
+    padding: 4px;
+    width: 35px;
+    border-radius: 4px;
+    font-size: 32px;
+    display: block;
+} */
+.slect_usr_type.form-group {
+    margin-bottom: 0 !important;
+}
+.ph_nuber_dtail, .ph_nmber_label{
+  padding-top: 10px;
+ }
+ .MuiAlert-action {
+  display: none !important;
+}
+
+.error_msg_shw small {
+    font-size: 11px !important;
+}
+.MuiAutocomplete-popper {
+  box-shadow: 0 0 14px -2px rgba(0,0,0,0.2) !important;
+  background: #fff;
+}
+
+.uplod_docs_dsply {
+  position: absolute;
+  bottom: 50px;
+  /* right: 326px; */
+}
+.uplod_docs_dsply2{
+  position: absolute;
+  right: 259px;
+  bottom: 118px;
+}
+
+.MuiAlert-icon .MuiSvgIcon-root {
+fill: white !important;
+}
+.upload_img_msg{
+  padding-left: 27px;
+  }
+
+  .crncy_col{
+    max-width: 20% !important;
+  }
+
+  .prvus_btn {
+   display: none;
+}
+.spinner-border.text-primary {
+   position: fixed;
+   left: 50%;
+   top: 50%;
+   z-index: 999;
+}
+.per_inr.col-sm-3 {
+  max-width: 22%;
+}
+
+.img_dsplay {
+   background-color: #E9F0F8;
+   padding: 10px;
+   margin-bottom: 10px;
+   height: 200px;
+}
+.rotate-icon{
+  transform: rotate(90deg);
+}
+.img_tag_wrp .MuiSvgIcon-root {
+  height: 31px;
+  fill: #635f5f !important;
+  /* background: #18A0FB !important; */
+  padding: 4px;
+  width: 35px;
+  border-radius: 4px;
+  font-size: 32px;
+  display: block;
+}
+
+.backdrop{
+  position: fixed;
+  top:  0;
+  left:0;
+  height: 100vh;
+  width:100%;
+  background-color: #fff;
+  opacity: 0.1;
+  z-index: 10;  
+  /* overflow: hidden; */
+}
+.tutr_nme input#outlined-basic {
+  border: 1px solid #18A0Fb;
+  border-radius: 6px;
+}
+.tutr_nme {
+  margin-top: 20px;
+}
+
+.tutr_nme .fltr_jobs_div label {
+  color: #797979;
+}
+.tutr_nme  fieldset legend > span {
+  padding-right: 25px;
+}
+.nme_tutors .MuiFormControl-root {
+  max-width: unset;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+  color: rgb(165 150 150 / 90%);
+  /* text-decoration: underline; */
+  border-bottom: 5px solid #18A0fb;
+  padding-bottom: 7px !important;
+}
+
+
+/* modal student profile*/
+.prfle_stdent .lst_login_dtail span.hedng_dedlne {
+    color: #181818;
+    font-size: 12px;
+    border-radius: 4px;
+    position: absolute;
+    left: calc(94% - 429.66px/2 - 199.17px);
+    top: 26px;
+}
+.prfle_stdent span.dte_deadline {
+    color: #18A0FB;
+    font-size: 11px;
+    position: absolute;
+    top: 27px;
+    left: 107px;
+}
+.mdl_div .modal-dialog {
+    max-width: 1000px;
+    margin: 1.75rem auto;
+}
+
+.mdl_stu_prfle .img-prfle {
+    width: 115px;
+    height: 115px;
+    position: absolute !important;
+    bottom: 17px;
+    margin-top: 0;
+}
+.mdl_stu_prfle .report_icon {
+    width: 68px;
+    position: absolute;
+    z-index: 1;
+    right: 0px;
+    bottom: 50px;
+}
+.mdl_stu_prfle .prfle_div h5 {
+    font-size: 16px;
+}
+.mdl_stu_prfle .prfle_addrss, .mdl_stu_prfle .work_prfle {
+    font-size: 13px;
+}
+.modal_dialog_cstm .modal-content {
+  background: #F7F9FB !important;
+}
+.modal_dialog_cstm .modal-dialog {
+    max-width: 900px;
+}
+.mdl_stu_prfle .dropdown-menu.dropdown-menu-right.show {
+    transform: translate3d(661px, -79px, 0px) !important;
+}
+
+
+.activities_sec .job_deadline_notifction.data_shw .img-fluid {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #bbb;
+  }
+
+  img.img-fluid.docs_img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.imp_hight{
+  height: 50px;
+  width: 50px !important;
+}
+
+
+/*---acordian */
+.MuiAccordionDetails-root {
+  display: flex;
+  padding: 0 !important;
+}
+.MuiAccordionSummary-content {
+margin: 0 !important;
+}
+p.rting_nmbers {
+  font-size: 14px;
+  font-weight: 500;
+  width: 324px;
+}
+.prfle_vew {
+  width: 142px;
+}
+p.cntct_dtail.tmes_dtail {
+  width: 306px;
+}
+.rting_prfle {
+  width: 352px;
+}
+span.rting_nmbers {
+  font-size: 13px;
+  font-weight: 600;
+}
+.stdent_prfle .card-body{
+padding:0.75rem;
+}
+.no_rating{
+font-size: 12px;
+font-weight: 500;
+}
+
+.student_job_dtail .flter_activty_dtail.row.form-group .MuiOutlinedInput-root {
+  background: #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 6px;
+  min-width: 929px;
+}
+.rtng .MuiSvgIcon-root{
+  fill:#FBBB17 !important;
+}
+.rtng_nmbers{
+  font-size:13px;
+  font-weight: 600;
+}
+.vrfied_job{
+margin-top: 18px;;
+}
+.student_job_dtail .srch_icon_col .srt_iconn {
+  padding-left: 73px !important;
+}
+.my_jobs_sec .serch_iconn {
+  margin-top: 0px;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  right: 16px;
+  top: 18px;
+}
+
+/* popup credit payment*/
+  .paymnt_form .form-group {
+    margin-bottom: 15px !important;
+  }
+  .width_form.paymnt_form{
+    padding-top: 0 !important;
+  }  
+  .modal-content.custom-modal-style {
+    width: 86%;
+  }
+
+  .tutor-receipt-table{
+    padding: "0";
+    border-collapse: "collapse";
+    margin: "0 auto";
+  }
+
+  .tutor-receipt-tbody{
+    background-color: "white" ;
+  }
+  .tutor-receipt-tr{
+    background-color: #18a0fb;
+  }
+  .tutor-receipt-td{
+    text-align:center;
+    color:white;
+  }
+  .tutor-receipt-body{
+    font-family:arconregular; 
+    background-color:#cbcbcb; 
+    color:#2d2d2d;
+  }
+
+  p.accord_texct {
+    padding-left: 18px;
+}
+.payments_issues .MuiAccordionDetails-root{
+  display: block !important;
+}
+.respnse_div{
+  padding:0 45px 0 20px !important;  
+}
+.dte_sec {
+  font-size: 12px;
+  color: grey;
+}
+span.year_exp {
+  color: #18a0fb;
+}
+span.teching_exp {
+  margin-left: 40%;
+}
+.teacher_prfle_sec .prfile_divv {
+  position: absolute;
+  top: 26px;
+  right: 10px;
+}
+
+/* modal  */
+.pst_rvw {
+  color: rgb(24 24 24 / 89%);
+}
+p.ph_no {
+  color: #18a0fb;
+  border-bottom: 1px solid #efefef;
+  padding-bottom: 15px;
+}
+
+.clse_jb span.no_coins {
+  color: #18a0fb;
+}
+.cnfrm_btn {
+  background: linear-gradient(180deg, #0077B5 0%, #0E6795 100%) !important;
+  border-radius: 4px !important;
+}
+.cnfrm_btn span.MuiButton-label {
+  color: white !important;
+} 
+p.no_coins {
+  font-size: 35px;
+  color: #18A0Fb;
+  font-weight: 500;
+}
+p.cnditions_agree a {
+  color: #18A0Fb;
+  font-size: 12px;
+  font-weight: 500;
+}
+.d-flex.rting_prfle_rating {
+    padding-top: 20px;
+}
+.rtng_nmber{
+  position: absolute;
+    top: 3px;
+    right: 21px;
+    font-weight: 600;
+}
+.star-star{
+  margin-right: 25px;
+}
+.student_find_sec span.rte_prfle.pl-3 {
+  position: absolute;
+  right: 191px;
+  /* bottom: 36px; */
+  top: -3px;
+}
+
+.messages-input {
+    width: 100%;
+    height: 40px;
+    border-top: 1px solid rgb(224, 224, 224);
+    background-color: #f0f0f0;
+    display: flex;
+}
+
+/*chat*/
+.width_msg {
+  max-width: 60%;
+  display: flex;
+  align-items: end;
+}
+.text-right.right_msgg.comon_msg {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+.right_msgg .tme{
+margin-right: 15px;
+}
+/* span.chat_dtail_job, span.chat_dtail_job1, p.chat_dtail_job2 {
+background: #E9F0F8;
+border-radius: 4px;
+font-size: 13px;
+color: #181818;
+padding:13px 10px;
+display: inline-flex;
+margin-right: 12px;
+word-wrap: break-word;
+text-align: left;
+} */
+.width_msg_dtail{
+width:60%;
+}
+.chat_box_crd{
+  overflow-y: scroll;
+  max-height: 500px;
+}
+.tutrs_rtng{
+  position: absolute;
+  right: 33px;
+  bottom: -2px;
+}
+.entr_msg .MuiInputBase-fullWidth {
+  width: 100%;
+  min-height: 30px;
+  padding-bottom: 30px;
+}
+.msg_crd{
+  border-top: 1px solid #d0d0d0;
+  padding-top: 20px;
+  padding-bottom: 3px;
+}
+
+.job_deadline_notifction .dropdown-toggle::after, .job_notifction .dropdown-toggle::after {
+  display: none;
+}
+
+.see_more_detl a {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 150%;
+  color: #18A0FB !important;
+}
+
+/* account setting modal*/
+p.user_dtails, .tutr_spprt {
+  font-size: 11px;
+}
+p.chnge_crncy {
+  margin-top: 17px;
+}
+p.crncy_dtl {
+  font-size: 12px;
+  border-bottom: 1px solid #d4d4d4;
+  padding-bottom: 17px;
+}
+p.chnge_rle , p.chnge_crncy {
+  font-size: 13px;
+  font-weight: 500;
+}
+.blcked_usr {
+  font-size: 12px;
+  max-width: 356px;
+  text-align: justify;
+  border-bottom: 1px solid #d4d4d4;
+  padding-bottom: 15px;
+}
+.blcked_lst{
+  background: #FFFFFF;
+  border: 1px solid #0275B1;
+  border-radius: 4px;
+  padding: 10px 10px;
+  min-height: 36px;
+  MARGIN-TOP: 19PX;
+}
+.blcked_lst p{
+  font-size: 12px;
+}
+p.user_dtails {
+    border-bottom: 1px solid #d4d4d4;
+    padding-bottom: 17px;
+}
+.blcked_usr1{
+  font-size:  12px;
+  max-width: 356px;
+  text-align: justify;
+}
+.stng_mdls .modal-dialog {
+  max-width: 706px;
+  margin: 1.75rem auto;
+}
+
+/* modal change password*/
+
+.pswrd_rw.row p {
+    font-size: 13px;
+}
+.crent_psswrd {
+    padding-bottom: 18px;
+}
+p.entr_psswrd {
+    padding-top: 10px;
+}
+.notify_imgs{
+  border:unset !important;
+}
+
+/* chips input */
+.saved_search_bottom_border{
+  border-bottom: 1px solid #d8d8d8;
+}
+/* end */
+
+span.rcent_tutor .MuiRating-root {
+  font-size: 14px !important;
+}
+
+/* modal */
+.blcked_lst.blcked_usr.col-md-5 {
+  max-width: 39%;
+}
+
+/*chat card active class*/
+.chats_tutor_card.active.card {
+  border-left: 6px solid #18A0FB;
+  }
+  .fltr_dsgn_row .fltrP{
+    color: #18A0FB;
+  }
+  .fltr_dsgn_row span{
+    font-weight: 600;
+  }
+
+  /* Reset password design */
+  /* .slid_inside h2 {
+    padding: 21px 0 !important;
+  }
+  .lgn_frm .card{
+    margin-top: 10%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  .lgn_frm .card-title{
+    color: #18A0FB !important
+  } */
