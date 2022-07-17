@@ -6,6 +6,7 @@ import {
 import { makeStyles,TextField, Typography,InputLabel,FormControl,MenuItem,Select,Button } from "@material-ui/core";
 import moment from "moment";
 import Autocomplete from "@material-ui/lab/Autocomplete";
+import { FormContext } from '../../App';
 
 const useStyles = makeStyles((theme) => ({
   formControl: {
@@ -20,16 +21,8 @@ const useStyles = makeStyles((theme) => ({
 const UpdateEducation = () => {
 
   const classes = useStyles();
-
-  const [degree, setDegree] = useState([
-    { name: 'BA', id: 1},
-    { name: 'MA', id: 2},
-  ]);
-  //institiue state
-  const [institute, setInstitute] = useState([
-    { name: 'PU', id: 11},
-    { name: 'PAU', id: 22},
-  ]);
+  const { activeStepIndex,setActiveStepIndex, formData, setFormData,degrees,institutes } = useContext(FormContext);
+ 
   
   //update education state
   const [education, setEducation] = useState({
@@ -77,6 +70,13 @@ const UpdateEducation = () => {
     }
   }
 
+  //onSubmit
+  function onSubmit(){
+    const obj = { ...formData, edu: education};
+    setFormData(obj);
+    setActiveStepIndex(activeStepIndex + 1);
+  }
+
   return (
     <section className="update_prof_sec">
         <Container>
@@ -96,7 +96,7 @@ const UpdateEducation = () => {
                               <div class="autocmplte_dta">
                                 <FormControl variant="outlined" className={classes.formControl}>
                                   <Autocomplete
-                                    options={degree}
+                                    options={degrees}
                                     name='deg'
                                     value = {education.deg}
                                     onChange={(event, newInputValue) => {
@@ -124,7 +124,7 @@ const UpdateEducation = () => {
                               <div class="autocmplte_dta">
                                 <FormControl variant="outlined" className={classes.formControl}>
                                   <Autocomplete
-                                    options={institute}
+                                    options={institutes}
                                     value = {education.ins}
                                     name='ins'
                                     onChange={(event, newInputValue) => {
@@ -250,7 +250,7 @@ const UpdateEducation = () => {
                     <Row className="text-right mt-3">
                       <Col sm="12" className="submit_dtail_btn">
                         <Button variant="outlined" className="sgnup_btn" color="primary">Back</Button> &nbsp;&nbsp;
-                        <Button variant="outlined" className="sgnup_btn" color="primary"
+                        <Button variant="outlined" className="sgnup_btn" color="primary" onClick={onSubmit}
                           >Next
                         </Button>
 

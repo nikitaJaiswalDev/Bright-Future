@@ -1,15 +1,13 @@
-import React, { useState, useEffect } from "react";
-import {
-    Container, Row, Col, Card, CardBody, CardTitle,
-    Form, FormGroup, Label, Input, FormText, CustomInput, UncontrolledDropdown,
-    DropdownToggle,
-    DropdownMenu,
-    DropdownItem, Modal, ModalHeader, ModalBody, ModalFooter,Spinner
-} from 'reactstrap';
+import React, { useState, useContext } from "react";
+import { Container, Row, Col, Card, CardBody, CardTitle,
+    Form, FormGroup, Label} from 'reactstrap';
 import { makeStyles,TextField, Typography,InputLabel,FormControl,MenuItem,Select,Button, Switch } from "@material-ui/core";
 import moment from "moment";
 import validator from "validator";
 import Autocomplete from "@material-ui/lab/Autocomplete";
+import { FormContext } from '../../App';
+import { userService } from "../../services";
+import FormData from 'form-data';
 
 const useStyles = makeStyles((theme) => ({
   formControl: {
@@ -24,13 +22,8 @@ const useStyles = makeStyles((theme) => ({
 export default function UpdatePreferences() {
 
   const classes = useStyles();
-
-  //currencies
-  const [currency, setCurrency] = useState([ 
-    { name: 'BA', id: 1},
-    { name: 'MA', id: 2},
-  ])
-  
+  const { activeStepIndex,setActiveStepIndex, formData, setFormData,currencies } = useContext(FormContext);
+  console.log('currencies', currencies);
   //Preference states
   const [preference, setPreference] = useState({
     exp: '',
@@ -43,10 +36,53 @@ export default function UpdatePreferences() {
   });
 
   //handle change
-  const handleChnage = () => {
-
+  const handleChnage = (event) => {
+    setPreference({...preference, [event.target.name]: event.target.value});
   }
 
+  //onSubmit
+  async function onSubmit(){
+    console.log(preference);
+    var data = new FormData();
+    console.log('formData', formData);
+    data.append('name', formData.name);
+    data.append('password', formData.password);
+    data.append('email', formData.email);
+    data.append('role', formData.role);
+    data.append('gender', formData.gender);
+    data.append('dob', formData.dob);
+    data.append('country', formData.country.name);
+    data.append('state', formData.state.name);
+    data.append('address', formData.address);
+    data.append('zip_code', formData.zip_code);
+    data.append('phone_code', formData.ph_code.phonecode);
+    data.append('phone_number', formData.phone_no);
+    data.append('bio', formData.bio);
+    data.append('profile_image', formData.profile_img_file);
+
+    data.append('degree', formData.edu.deg.name);
+    data.append('institute', formData.edu.inst.name);
+    data.append('edu_year', formData.edu.startYear + '-' + formData.edu.endYear);
+    data.append('education_description', formData.edu.desc);
+    data.append('education_document', formData.edu.documentImage);
+
+    data.append('organization', formData.expe.org.name);
+    data.append('designation', formData.expe.des.name);
+    data.append('exp_year', formData.expe.startYear + '-' + formData.expe.endYear);
+    data.append('exp_description', formData.expe.desc);
+    data.append('exp_document', formData.expe.documentImage);
+
+    data.append('teaching_exp', preference.exp);
+    data.append('language_preference', preference.language);
+    data.append('mode_of_teaching', preference.modeOffline + '-' +  preference.modeOnline);
+    data.append('fees_from', preference.feeFrom);
+    data.append('fees_to', preference.feeToo);
+    data.append('fees_currency', preference.currency);
+
+    const res = await userService.userRegister(data);
+    console.log('res-->', res);
+
+  }
   return (
     <section className="update_prefernce_sec">
         <Container>
@@ -105,7 +141,7 @@ export default function UpdatePreferences() {
                             <Col className="teach_mode" sm="12">
                               <Switch
                                 checked={preference.modeOnline}
-                                onChange={handleChnage}
+                                onChange={(e)=> setPreference({...preference, modeOnline: e.target.checked})}
                                 color="primary"
                                 name="modeOnline"
                                 inputProps={{ 'aria-label': 'primary checkbox' }}
@@ -114,7 +150,7 @@ export default function UpdatePreferences() {
                             <Col className="teach_mode" sm="12">
                               <Switch
                                 checked={preference.modeOffline}
-                                onChange={handleChnage}
+                                onChange={(e)=> setPreference({...preference, modeOffline: e.target.checked})}
                                 color="primary"
                                 name="modeOffline"
                                 inputProps={{ 'aria-label': 'primary checkbox' }}
@@ -124,6 +160,7 @@ export default function UpdatePreferences() {
                               </div>
                             </Col>
                           </FormGroup>
+
                           <FormGroup row className="align-items-center">
                             <Label for="" sm={12}>Fees <span className="lab_spnn">(Cost/hr)</span></Label>
                             <Col sm={2}>
@@ -152,10 +189,11 @@ export default function UpdatePreferences() {
                                 <FormControl variant="outlined" className={classes.formControl}>
                                   <Autocomplete
                                     id="combo-box-demo"
-                                    options={currency}
+                                    options={currencies}
                                     renderOption={(option) => (
-                                      <Typography style={{ fontSize: "13px" }}>{option}</Typography>
+                                      <Typography style={{ fontSize: "13px" }}>{option.name}</Typography>
                                     )}
+                                    getOptionLabel={(option) => option.name}
                                     value={preference.currency}
                                     onChange={(event, newInputValue) => {
                                       setPreference((preference) => ({ ...preference, currency: newInputValue }));
@@ -173,7 +211,8 @@ export default function UpdatePreferences() {
                     <Row className="text-right dsh_btn">
                       <Col sm="12" className="submit_dtail_btn">
                         <Button variant="outlined" className="sgnup_btn" color="primary" >Back</Button> &nbsp;&nbsp;
-                        <Button variant="outlined" color="primary" className="sgnup_btn" >Confirm </Button>
+                        <Button variant="outlined" color="primary" className="sgnup_btn" 
+                          onClick={onSubmit}>Confirm </Button>
                       </Col>
                     </Row>
                   </CardBody>

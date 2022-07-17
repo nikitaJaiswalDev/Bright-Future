@@ -1,17 +1,13 @@
-import React, { useState, useEffect } from "react";
-import {
-    Container, Row, Col, Card, CardBody, CardTitle,
-    Form, FormGroup, Label, Input, FormText, CustomInput, UncontrolledDropdown,
-    DropdownToggle,
-    DropdownMenu,
-    DropdownItem, Modal, ModalHeader, ModalBody, ModalFooter,Spinner
-} from 'reactstrap';
+import React, { useState, useEffect, useContext} from "react";
+import { Container, Row, Col, Card, CardBody, CardTitle,Form, FormGroup, Label, Input } from 'reactstrap';
 import { makeStyles,TextField, Typography,InputLabel,FormControl,MenuItem,Select,Button } from "@material-ui/core";
 import moment from "moment";
-import validator from "validator";
 import Autocomplete from "@material-ui/lab/Autocomplete";
 import { Country, State, City }  from 'country-state-city';
 import DeleteIcon from "@material-ui/icons/Delete";
+import { FormContext } from '../../App';
+import { userService } from "../../services";
+var FormData = require('form-data');
 
 const useStyles = makeStyles((theme) => ({
     paper: {
@@ -38,19 +34,18 @@ const useStyles = makeStyles((theme) => ({
 }));
 export default function UpdateProfile() {
 
+    const { activeStepIndex,setActiveStepIndex, formData, setFormData,countries } = useContext(FormContext);
     const classes = useStyles();
     //state to store all the country
-    var [country, setCountry] = useState({
-        countryValue: [],
-        stateValue: [],
-    })
+    var [states, setStates] = useState([])
 
   //USER STATE
   const [profile, setProfile] = useState({
     name: '',
+    password: '',
     role: '',
-    gender: '',
     email: '',
+    gender: '',
     dob: '',
     country: '',
     state: '',
@@ -63,9 +58,6 @@ export default function UpdateProfile() {
     profile_img_name: '',
   });
 
-    useEffect(()=> {
-      setCountry({...country, countryValue: Country.getAllCountries()});
-    }, []);
     //change the state as per country
     const getStatesOfCountry = (isoCode) => {
       const states = State.getStatesOfCountry(isoCode)
@@ -97,7 +89,36 @@ export default function UpdateProfile() {
 
     //on form submit
     async function onSubmit(){
-      console.log('profile states', profile);
+      console.log(profile);
+      var data = new FormData();
+      if(profile.role === 'student'){
+        data.append('name', profile.name);
+        data.append('password', profile.password);
+        data.append('email', profile.email);
+        data.append('role', profile.role);
+        data.append('gender', profile.gender);
+        data.append('dob', profile.dob);
+        data.append('country', profile.country.name);
+        data.append('state', profile.state.name);
+        data.append('address', profile.address);
+        data.append('zip_code', profile.zip_code);
+        data.append('phone_code', profile.ph_code.phonecode);
+        data.append('phone_number', profile.phone_no);
+        data.append('bio', profile.bio);
+        data.append('profile_image', profile.profile_img_file);
+        const obj = { ...formData, ...profile };
+        setFormData(obj);
+
+        const res = await userService.userRegister(data);
+        if(res && res.status === 201){
+          alert('user created successfully');
+        }
+      }else{
+        const data = { ...formData, ...profile };
+        console.log('data', data);
+        setFormData(data);
+        setActiveStepIndex(activeStepIndex + 1);
+      }
     }
 
   return (
@@ -129,6 +150,27 @@ export default function UpdateProfile() {
                                   name="name"
                                   value={profile.name}
                                   onChange={(e) => setProfile({...profile, name: e.target.value})}
+                                />
+                                <div className="error_msg_shw">
+                                  <small className="text-danger">
+                                  </small>
+                                </div>
+                              </Col>
+                            </FormGroup>
+
+                            <FormGroup row>
+                              <Label for="name" sm={3}>
+                                Password*
+                              </Label>
+                              <Col sm={4}>
+                                <TextField
+                                  type="password"
+                                  id="outlined-basic"
+                                  label="Password"
+                                  variant="outlined"
+                                  name="password"
+                                  value={profile.password}
+                                  onChange={(e) => setProfile({...profile, password: e.target.value})}
                                 />
                                 <div className="error_msg_shw">
                                   <small className="text-danger">
@@ -182,7 +224,6 @@ export default function UpdateProfile() {
                                     </MenuItem>
                                     <MenuItem value="student">Student</MenuItem>
                                     <MenuItem value="tutor">Tutor</MenuItem>
-                                    <MenuItem value="both">Both</MenuItem>
                                   </Select>
                                 </FormControl>
                               </Col>
@@ -260,11 +301,11 @@ export default function UpdateProfile() {
                                 >
                                     <Autocomplete
                                         id="combo-box-demo"
-                                        options={country.countryValue}
+                                        options={countries}
                                         value={profile.country}
                                         onChange={(e, newValue)=>{
                                           setProfile({...profile, country: newValue})
-                                          setCountry({...country, stateValue: getStatesOfCountry( newValue.isoCode)});
+                                          setStates( getStatesOfCountry( newValue.isoCode));
                                         }}
                                         renderOption={(option) => (
                                         <Typography style={{ fontSize: "13px" }}>
@@ -298,7 +339,7 @@ export default function UpdateProfile() {
                                 >
                                   <Autocomplete
                                         id="combo-box-demo"
-                                        options={country.stateValue}
+                                        options={states}
                                         value={profile.state}
                                         onChange={(e, newValue) => setProfile({...profile, state: newValue})}
                                         renderOption={(option) => (
@@ -366,7 +407,7 @@ export default function UpdateProfile() {
                                 >
                                     <Autocomplete
                                         id="combo-box-demo"
-                                        options={country.countryValue}
+                                        options={countries}
                                         value={profile.ph_code}
                                         onChange={(e, newValue)=> setProfile({...profile, ph_code: newValue})}
                                         renderOption={(option) => (

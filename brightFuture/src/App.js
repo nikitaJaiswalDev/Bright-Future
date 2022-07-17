@@ -1,31 +1,45 @@
 import { useState, createContext, useEffect } from "react";
 import UserRoute from './routes';
 import { Country, State, City }  from 'country-state-city';
+export const FormContext = createContext();
 
 function App() {
 
-  const UserContext = createContext('');
-  const [country, setCountry] = useState([]);
+  const [countries, setCountries] = useState([]);
   useEffect(()=> {
-    setCountry(Country.getAllCountries());
+    setCountries(Country.getAllCountries());
   }, []);
 
-  const [degree, setDegree] = useState([
+  let degrees = [
     { name: 'BA', id: 1},
     { name: 'MA', id: 2},
-  ]);
-  //institiue state
-  const [institute, setInstitute] = useState([
+  ];
+  let institutes = [
     { name: 'PU', id: 11},
     { name: 'PAU', id: 22},
-  ]);
+  ];
+  let organisation = [
+    { name: 'BA', id: 1},
+    { name: 'MA', id: 2},
+  ];
+  let designation = [
+    { name: 'PU', id: 11},
+    { name: 'PAU', id: 22},
+  ];
+  let currencies = [
+    { name: 'PU', id: 11},
+    { name: 'PAU', id: 22},
+  ];
   
+  const [activeStepIndex, setActiveStepIndex] = useState(1);
+  const [formData, setFormData] = useState({});
 
   return (
     <div className="App">
-      <UserContext.Provider value={country}>
+      <FormContext.Provider value={{activeStepIndex, setActiveStepIndex, formData, 
+          setFormData, countries,degrees,institutes, organisation, designation,currencies}}>
         <UserRoute/>
-      </UserContext.Provider>
+      </FormContext.Provider>
     </div>
   );
 }

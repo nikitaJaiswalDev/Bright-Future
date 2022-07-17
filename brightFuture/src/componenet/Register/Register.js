@@ -1,14 +1,14 @@
-import React, { useState } from 'react'
+import React, { useState , useContext} from 'react'
 import UpdateEducation from './UpdateEducation';
 import UpdateExperience from './UpdateExperience';
 import UpdatePreferences from './UpdatePreferences';
 import UpdateProfile from './UpdateProfile';
+import { FormContext } from '../../App';
 
 export default function Register() {
+  const { activeStepIndex, setActiveStepIndex, formData, setFormData } = useContext(FormContext);
 
-  const [step, setStep] = useState(1);
-
-  switch(step){
+  switch(activeStepIndex){
     case 1:
       return(
         <UpdateProfile />

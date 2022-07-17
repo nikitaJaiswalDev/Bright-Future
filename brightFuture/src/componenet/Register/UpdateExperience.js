@@ -1,16 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useContext } from "react";
 import {
     Container, Row, Col, Card, CardBody, CardTitle,
-    Form, FormGroup, Label, Input, FormText, CustomInput, UncontrolledDropdown,
-    DropdownToggle,
-    DropdownMenu,
-    DropdownItem, Modal, ModalHeader, ModalBody, ModalFooter,Spinner
-} from 'reactstrap';
-import { makeStyles,TextField, Typography,InputLabel,FormControl,MenuItem,Select,Button } from "@material-ui/core";
+    Form, FormGroup, Label, Input} from 'reactstrap';
+import { makeStyles,TextField, Typography,FormControl,Button } from "@material-ui/core";
 import moment from "moment";
 import validator from "validator";
 import Autocomplete from "@material-ui/lab/Autocomplete";
-
+import { FormContext } from '../../App';
 
 const useStyles = makeStyles((theme) => ({
   formControl: {
@@ -25,17 +21,7 @@ const useStyles = makeStyles((theme) => ({
 export default function UpdateExperience() {
 
   const classes = useStyles();
-
-  //Organisation state
-  const [organisation, setOrganisation] = useState([
-    { name: 'BA', id: 1},
-    { name: 'MA', id: 2},
-  ]);
-  //Designation state
-  const [designation, setDesignation] = useState([
-    { name: 'PU', id: 11},
-    { name: 'PAU', id: 22},
-  ]);
+  const { activeStepIndex,setActiveStepIndex, formData, setFormData, organisation,designation } = useContext(FormContext);
 
   //update Experience state
   const [experience, setExperience] = useState({
@@ -80,6 +66,14 @@ export default function UpdateExperience() {
     } else {
       alert("JPG,JPEG and PNG format supported");
     }
+  }
+
+  //onSubmit
+  function onSubmit(){
+    console.log(experience);
+    const obj = { ...formData, expe: experience };
+    setFormData(obj);
+    setActiveStepIndex(activeStepIndex + 1);
   }
 
   return (
@@ -255,7 +249,8 @@ export default function UpdateExperience() {
                     <Row className="text-right mt-3">
                       <Col sm="12" className="submit_dtail_btn">
                         <Button variant="outlined" className="sgnup_btn" color="primary" >Back</Button> &nbsp;&nbsp;
-                        <Button variant="outlined" className="sgnup_btn" color="primary">Next
+                        <Button variant="outlined" className="sgnup_btn" color="primary"
+                          onClick={onSubmit}>Next
                         </Button>
                       </Col>
                     </Row>

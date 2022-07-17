@@ -14,5 +14,22 @@ async function getAllDegreesList() {
         return error;
     }
 }
+//user registration
 
-export const userService= { getAllDegreesList }
+async function userRegister(data){
+    var config = {
+        method: 'post',
+        url: 'http://localhost:5000/register',
+        data : data
+      };
+      
+    return await axios(config)
+      .then(function (response) {
+        return response;
+      })
+      .catch(function (error) {
+        return error
+      });
+}
+
+export const userService= { getAllDegreesList, userRegister}
